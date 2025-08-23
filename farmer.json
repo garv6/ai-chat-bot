@@ -1,0 +1,380 @@
+{
+    "intents" : [
+            {
+                "tag": "greeting",
+                "questions": ["Hi", "How are you?", "Is anyone there?", "Hello","hey"],
+                "responses": ["Hello!", "Hi there!", "How can I help you?"]
+            },
+            {
+              "tag": "nonsense",
+              "questions": [
+                "ncdsbccb",
+                "ncsjsdcbdsjkc",
+                "What is my age?",
+                "asdfghjkl",
+                "What is me?",
+                "Random input"
+              ],
+              "responses": [
+                "I couldn't understand that. Please ask me about farmer schemes .",
+                "I'm here to help with farmer schemes. Please ask a relevant question.",
+                "It seems you're asking something unrelated. I'm happy to assist with farmer government schemes.",
+                "That doesn't seem related to the schemes I'm here to assist with. Please ask me about farmer schemes!"
+              ]
+            }
+            ,
+            {
+              "tag": "incomplete_info",
+              "questions": [
+                "Can you give eligibility of",
+                "Can you tell me about",
+                "Please provide details of",
+                "Tell me the eligibility for",
+                "Eligibility for",
+                "What is the eligibility of",
+                "Give me eligibility info for",
+                "Eligibility details",
+                "Can I know the eligibility",
+                "Tell me about eligibility",
+                "Tell me the benefits of",
+                "What is the application process for",
+                "Explain the documents required for",
+                "How to apply for",
+                "What’s the eligibility for",
+                "What are the benefits of",
+                "Tell me the documents for"
+              ],
+              "responses": [
+                "Please specify the scheme name so I can provide the details.",
+                "Could you mention the scheme name? I'll be happy to help you with its information.",
+                "Please provide the name of the scheme for more details."
+              ]
+            },
+            {
+              "tag": "ambiguous",
+              "questions": [
+                "Can you help me?",
+                "Give me more details",
+                "Tell me more",
+                "I need information"
+              ],
+              "responses": [
+                "Sure! Could you specify the scheme or details you're looking for?",
+                "I can definitely help, but could you clarify your request?"
+              ]
+            },
+            {
+              "tag": "followup",
+              "questions": [
+                "What about eligibility?",
+                "And the benefits?",
+                "Tell me how to apply"
+              ],
+              "responses": [
+                "Are you asking about the same scheme as before? Please clarify.",
+                "Could you confirm the scheme you're referring to so I can assist?"
+              ]
+            },
+            {
+              "tag": "incorrect_scheme",
+              "questions": [
+                "What are the benefits of xyz scheme?",
+                "Eligibility for nonexistent scheme",
+                "How to apply for abcdef scheme"
+              ],
+              "responses": [
+                "I’m not familiar with that scheme",
+                "That scheme doesn't seem to exist. Please ask about one of the known farmer-centric schemes."
+              ]
+            },
+            {
+              "tag": "out_of_scope",
+              "questions": [
+                "What's the weather?",
+                "Tell me a joke",
+                "What's the capital of India?"
+              ],
+              "responses": [
+                "I'm here to assist with women's schemes. Please let me know if you'd like to know about a specific scheme.",
+                "I can't provide information on that, but I can tell you about government schemes!"
+              ]
+            },
+            {
+              "tag": "clarification",
+              "questions": [
+                "Can you explain that again?",
+                "What did you say?",
+                "I didn’t understand, can you repeat?"
+              ],
+              "responses": [
+                "Let me explain again. [Repeat previous response]",
+                "I'll explain again. What would you like to clarify?"
+              ]
+            },
+            {
+              "tag": "yes_no",
+              "questions": [
+                "Yes",
+                "No",
+                "Okay",
+                "Sure"
+              ],
+              "responses": [
+                "Great! Let me continue assisting you.",
+                "Please let me know how I can further assist."
+              ]
+            },
+            {
+              "tag": "sentiment",
+              "questions": [
+                "You're not helping",
+                "This isn't what I asked for",
+                "Why don't you understand?"
+              ],
+              "responses": [
+                "I'm sorry if I didn’t provide the information you need. Could you clarify your question so I can better assist?",
+                "Apologies for any confusion. Please specify your request, and I'll do my best to help!"
+              ]
+            },
+            {
+                "tag": "which_scheme",
+                "questions": ["Enlist all the schemes", "List all the available schemes", "name the schemes", "all the ", "what are the schemes?" ,"tell me about schemes" ,"eligibility of scheme" , "objective of schemes", "document for scheme" , "dates for scheme" , "what sre date for scheme" , " what is eligibility for scheme","what is objective for scheme", "who can apply for scheme","what are benefits","scheme benefits","women scheme","education scheme","health scheme","list all women scheme","list all education scheme","list health scheme","women scheme","education scheme","health scheme","tell me about women scheme","tell me about education scheme","tell me about education schemes"],
+                "responses": [
+                    "Here are the main categories of schemes: 1) Women Schemes 2) Farmer Schemes 3) Education Schemes. Please ask about a farmer category for more details."
+                ]
+            },
+            {
+                "tag": "farmer_scheme_name",
+                "questions": ["Enlist all the schemes related to farmer","List all the available schemes for agriculture","name the schemes for farmer","all the farmer schemes","what are the schemes for farmer?"],
+                "responses": [
+                            "1)Pradhan Mantri Kisan Samman Nidhi 2)Pradhan Mantri Fasal Bima Yojna 3)Chief Minister Agriculture and Food Processing Scheme "
+                            ]
+            },
+            {
+            "tag": "pmkisan_details",
+            "questions": [
+              "What is the pm kisan scheme?",
+              "Tell me about the scheme",
+              "What is Pradhan Mantri Kisan Samman Nidhi",
+              "pmkisan",
+              "What is pmkisan?"
+            ],
+            "responses": [
+              "The scheme 'Pradhan Mantri Kisan Samman Nidhi'Provides income support of ₹6,000 per year to small and marginal farmers in three installments of ₹2,000 each."
+            ]
+          },
+          {
+            "tag": "pmkisan_eligibility",
+            "questions": [
+              "What are the eligibility criteria for pmkisan?",
+              "Who can apply for pmkisan?",
+              "Eligibility for the pmkisan scheme",
+              "pmkisan eligibility",
+              "who are eligibile for pmkisan scheme",
+              "eligibility of pmkisan"
+            ],
+            "responses": [
+              "All landholding farmers' families, which have cultivable land holding in their names are eligible to get benefit under the scheme."
+            ]
+          },
+          {
+            "tag": "pmkisan_objective",
+            "questions": [
+              "Objective of the pmkisan scheme?",
+              "pmkisan Scheme objective",
+              "Purpose of the pmkisan scheme",
+              "overview of pmkisan",
+              "pmkisan objective"
+            ],
+            "responses": [
+              "The scheme aims to supplement the financial needs of all landholding farmers families by procuring various inputs to ensure proper crop health and appropriate yields, commensurate with the anticipated farm income as well as for domestic needs. Under the scheme an amount of ₹ 6000/- per year is released by the Central Government online directly into the bank accounts of the eligible farmers under Direct Benefit Transfer mode, subject to certain exclusions. "
+            ]
+          },
+          {
+            "tag": "pmkisan_benefits",
+            "questions": [
+              "What are the benefits of pmkisan?",
+              "pmkisan benefits",
+              "What do I get from the pmkisan scheme?"
+            ],
+            "responses": [
+              "Financial benefit of Rs. 6000 per annum per family payable in three equal installments of Rs 2000 each, every four months."
+            ]
+          },
+          {
+            "tag": "pmkisan_application_process",
+            "questions": [
+              "How to apply for pmkisan?",
+              "Application process for pmkisan scheme",
+              "How can I apply for the pmkisan scheme?"
+            ],
+            "responses": [
+              "Step 1: The following are the prerequisites for the enrollment process:Aadhaar CardLandholding paperSavings bank account\nStep 2: The VLE will fill in the complete details of farmer registration details like State, district, subdistrict block, and village, key in the Aadhaar number, Name of the beneficiary, category, Bank detail, Land Registration ID, and Date of birth as printed on Aadhaar card for authentication..\nStep 3: The VLE will fill in the Land details like Survey/ Kahta No., Khasra no., and area of land as mentioned in land holding papers. \nStep 4: Upload the supporting documents like Land, Aadhar, and Bank passbook.\nStep 5: Self-declaration accept and save the application form.\nStep 6: After saving the application form make payment through CSC ID.\nStep 7: Check the Beneficiary status through the Aadhaar number."
+            ]
+          },
+          {
+            "tag": "pmkisan_required_documents",
+            "questions": [
+              "What documents are required for pmkisan scheme?",
+              "Required documents for pmkisan",
+              "Documents needed for pmkisan application"
+            ],
+            "responses": [
+              "You will need the following documents for the application:\n\n1.Aadhaar Card,Landholding papers,Savings Bank Account."
+            ]
+          },
+          {
+            "tag": "pmfby_details",
+            "questions": [
+              "What is the pmfby?",
+              "Tell me about the Pradhan Mantri Fasal Bima Yojna",
+              "What is Pradhan Mantri Fasal Bima Yojna",
+              "Pradhan Mantri Fasal Bima Yojna Scheme",
+              "pmfby",
+              "What is pmfby?",
+              "Objective of the Pradhan Mantri Fasal Bima Yojna?",
+              "Pradhan Mantri Fasal Bima Yojna objective",
+              "Purpose of the Pradhan Mantri Fasal Bima Yojna"
+            ],
+            "responses": [
+              "The Pradhan Mantri Fasal Bima Yojna works on the One Nation, One Crop, One Premium.\nTo provide insurance coverage and financial support to the farmers in the event of failure of any of the notified crops as a result of natural calamities, pests & diseases.\nTo stabilize the income of farmers to ensure their continuance in farming.\nTo encourage farmers to adopt innovative and modern agricultural practices.\nTo ensure the flow of credit to the agriculture sector."
+            ] 
+        },
+        {
+            "tag": "pmfby_eligibility",
+            "questions": [
+              "What are the Pradhan Mantri Fasal Bima Yojna eligibility criteria?",
+              "Who can apply for Pradhan Mantri Fasal Bima Yojna?",
+              "Pradhan Mantri Fasal Bima Yojna Eligibility",
+              "eligibility for pmfby",
+              "eliigibility for Pradhan Mantri Fasal Bima Yojna"
+            ],
+            "responses": [
+                   "The farmer must be a cultivator or a sharecropper on the insured land.Farmers must have a valid and authenticated land ownership certificate or a valid land tenancy agreement.\nThe farmer must have applied for insurance coverage within the prescribed time frame, which is generally within 2 weeks of the start of the sowing season.\nThey must not have received any compensation for the same crop loss from any other source.The farmer should have a valid bank account and provide details of their bank account, along with a valid identity proof, at the time of enrollmentAll farmers growing notified crops in a notified area during the season who have an insurable interest in the crop are eligible."
+            ]
+          },
+          {
+            "tag": "pmfby_benefits",
+            "questions": [
+              "Pradhan Mantri Fasal Bima Yojna benefits?",
+              "What are benefits for Pradhan Mantri Fasal Bima Yojna",
+              "What do I get from the Pradhan Mantri Fasal Bima Yojna?",
+              "what are benefits of pmfby",
+              "what do I get from pmfby"
+            ],
+            "responses": [
+              "The benefits of this scheme are mentioned as under:\nComprehensive insurance coverage for Kharif and Rabi crops.\nAdd on the coverage available for specific circumstances.\nOptional for farmers, both loanee and non-loanee.\nStability in the income of farmers so that they can continue farming."
+            ]
+          },
+          {
+            "tag": "pmfby_application_process",
+            "questions": [
+              "How to apply for Pradhan Mantri Fasal Bima Yojna?",
+              "Pradhan Mantri Fasal Bima Yojna Application process",
+              "How can I apply for the Pradhan Mantri Fasal Bima Yojna?",
+              "how to apply for pmfby",
+              "application of pmfby",
+              "how to claim for pmfby"
+            ],
+            "responses": [
+              "Applicant farmers have to visit the official portal https://pmfby.gov.in/.\nClick on Farmer CornerIf the applicants do not have an account on the portal, click on Guest Farmer.\n Fill in all the details correctly and click on submit.\n An account will be created.Fill out the form in the insurance scheme and provide the required details.\nHow to Claim?\nIn case of crop loss, farmers are required to file a claim with the insurance company within the prescribed time frame, which is generally within 72 hours of the occurrence of the loss.\nList of concerned person/company details on the portal and click in Report Crop Loss or download the app and report crop loss.\nThe claim must be accompanied by supporting documents, such as photographs of the damaged crop and a report from the village-level committee (VLC) or the agriculture department."
+            ]
+          },
+          {
+            "tag": "pmfby_required_documents",
+            "questions": [
+              "What documents are required for Pradhan Mantri Fasal Bima Yojna?",
+              "Pradhan Mantri Fasal Bima Yojna Required documents",
+              "Documents needed for application forPradhan Mantri Fasal Bima Yojna",
+              "documents for pmfby",
+              "what are documents for pmfby"
+            ],
+            "responses": [
+              "Bank account number.\nAadhaar card.Khasra number of land.\nAgreement photocopy.\nRation card.\nVoter ID.\nDriving license.\nPassport-size photograph of the farmer."
+            ]
+          },
+          {
+            "tag": "pmfby_official_links",
+            "questions": [
+              "Where can I find more information about  Pradhan Mantri Fasal Bima Yojna?",
+              " Pradhan Mantri Fasal Bima Yojna Official links",
+              "Which site for  Pradhan Mantri Fasal Bima Yojna",
+              "What website for  Pradhan Mantri Fasal Bima Yojna",
+              "Give official link for  Pradhan Mantri Fasal Bima Yojna",
+              "official link for pmfby"
+            ],
+            "responses": [
+              "You can find more information about  Pradhan Mantri Fasal Bima Yojna on the official website: https://pmfby.gov.in/."
+            ]
+          },
+          {
+            "tag": "cmafps_details",
+            "questions": [
+              "What is the cmafps?",
+              "What is the cmafps?",
+              "Tell me about the Chief Minister Agriculture and Food Processing Scheme",
+              "What is Chief Minister Agriculture and Food Processing Scheme",
+              "Chief Minister Agriculture and Food Processing Scheme",
+              "cmafps",
+              "What is cmafps?",
+              "Objective of the Chief Minister Agriculture and Food Processing Scheme?",
+              "Chief Minister Agriculture and Food Processing Scheme",
+              "Purpose of the Chief Minister Agriculture and Food Processing Scheme"
+            ],
+            "responses": [
+                 "Chief Minister Agriculture and Food Processing Scheme is being implemented in the state since 2017-18 which  has been extended for the next five years till the year 2026-27 as per the government resolution dated 17 May 2022.  The main objectives of the scheme are to encourage model technology based projects and quality enhancement of agriculture produce, to encourage exports, to create skill manpower for agro and food processing and employment generation through small and medium agro and food processing units in rural areas.."
+            ]        
+          },
+          {
+            "tag": "cmafps_eligibility",
+            "questions": [
+              "What are the Chief Minister Agriculture and Food Processing Scheme eligibility criteria?",
+              "Who can apply for Chief Minister Agriculture and Food Processing Scheme?",
+              "Chief Minister Agriculture and Food Processing Scheme",
+              "eligibility for cmafps",
+              "who can apply for cmafps"
+          ],
+            "responses": [
+                "The beneficiary should have age above 18 years\nThe beneficiary should have Aadhaar Card/ Pan Card .\nThe beneficiary should have Good Bank CIBIL Score\nThe beneficiary have 7/12 certificate and 8 -A certificate or Lease documents."
+                       ]
+          },
+          {
+            "tag": "cmafps_benefits",
+            "questions": [
+              "Chief Minister Agriculture and Food Processing Scheme benefits?",
+              "What are benefits for Chief Minister Agriculture and Food Processing Scheme",
+              "What do I get from the Chief Minister Agriculture and Food Processing Scheme?",
+              "what are benefits of cmafps",
+              "what do i get from cmafps"
+            ],
+            "responses": [
+            "Elements of the Scheme - Under this scheme, three components are included as follows.\nComponent No.1- Establishment of agriculture and food processing units, their upgradation and modernization.\nComponent No. 2 - The cold chain.To establish food processing projects related to pre-processing centre and integrated cold chain. \nFinancial Assistance:\n 30% subsidy for construction of factories and machines of Processing Unit (Civil work for housing processing unit) and maximum limit of Rs.50.00 lakhs.\n Subsidy will be given on the basis of “Credit Linked Back ended subsidy”  in two similar instalments After completion of the project and b) After full commercial production.\n Loan amount should one and half times more than subsidy."
+            ]
+          },
+          {
+            "tag": "cmafps_application_process",
+            "questions": [
+              "How to apply for Chief Minister Agriculture and Food Processing Scheme?",
+              "Chief Minister Agriculture and Food Processing Scheme",
+              "How can I apply for the Chief Minister Agriculture and Food Processing Scheme?",
+              "apply for cmafps",
+              "how to apply for cmafps"
+            ],
+            "responses": [
+              "1.Applicant (Entrepreneur)\n 2.Proposal submitted with bank loan approval to District Superintendent Agriculture Officer\n 3.Pre-project feasibility study through the Deputy Director of Agriculture, District Superintendent Agriculture Office/Sub-divisional agricultural Officer and with the recommendation of the District Project Implementation Committee\n 4.Major Document Verification for Grant Payment- CA Certificate, Original Bank Loan Sanction, Original Bank Appraisal, CE -Civil & Mechanical, Bank Reserve fund Acc. Details, recommendation of District level Project Implementation Committee and strategic inspection report etc.\n 5.In-principle approval of eligible projects in Commissionerate level Project Approval Committee meeting\n 6.As per the recommendation of the District level Project Implementation Committee, after the completion of the project construction, the first phase and the second phase, when the project is in full production capacity, the subsidy will be deposited in the reserve fund account of the bank."
+            ]
+          },
+          {
+            "tag": "cmafps_required_documents",
+            "questions": [
+              "What documents are required for cmafps?",
+              " Chief Minister Agriculture and Food Processing Scheme Required documents",
+              "Documents needed for application for Chief Minister Agriculture and Food Processing Scheme",
+              "Documents needed for application for cmafps"
+            ],
+            "responses": [
+              "Beneficiary Application (Annexure II)\n2.Bank Loan Sanction Letter (Original)\n3.Bank Appraisal (Original)\n4.7/12, 8A (Original) or Agreement\n5.PAN card of individual/business, Aadhaar card\n6.Enterprise Registration Certificate (Udyam Registration)\n7.Detailed Project Report (DPR) of the project (Original)\n8.A flow chart of the project's process output\n9.Notarized Agreement to be submitted for Project Construction (Annexure-III)\n10.Construction Blue Print (Bank Attested)\n11.Construction Budget (Bank Attested)\n12.Machinery Quotation (Bank Attested)\n13.Pre-project feasibility study report (Annexure-V)\n14.Recommendation Letter of District Level Project Implementation Committee (Annexure- VI)\n15.Audit reports for last three years (Only for Upgradation, Expansion and Modernization Projects)."
+            ]
+          }
+    ]
+}

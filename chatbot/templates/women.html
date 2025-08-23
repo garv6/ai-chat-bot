@@ -1,0 +1,137 @@
+<!-- chatbot/templates/chatbot/chatbot.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+
+    <!-- CSS Styling for Chatbot -->
+    <style>
+        #chatbot{
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            margin-top: 50px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        
+        .botText{
+            margin: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            text-align: left;
+            line-height: 25px;
+            color: rgb(109, 111,109);
+        }
+        
+        #userInput{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            width: 70%;
+            text-align: center;
+        }
+        
+        #textInput{
+            border: 3px solid white;
+            border-bottom: 3px solid #9e9d9d;
+            font-family: monospace;
+            font-size: 14px;
+            width: 60%;
+            padding: 16px;
+            color: black;
+        }
+        
+        #buttonInput{
+            padding: 9px;
+            font-family: monospace;
+            font-size: 14px;
+            border: 3px solid #ba0000;
+            background-color: rgb(205 40 40);
+            color: white;
+            border-radius: 10px;
+        }
+        .userText{
+            margin: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            text-align: right;
+            line-height: 25px;
+            color: rgb(109, 111,109);
+        }
+    </style>
+    
+</head>
+<body>
+
+<!-- Chatbot Container -->
+<div id="chatbot-container">
+    <!-- Chat Header -->
+    <div class="chat-header">
+        Women Bot
+    </div>
+
+    <!-- Chat Messages Container -->
+    <div id="chatbot">
+        <p class="botText"><span>Hi there</span></p> <!-- Initial Bot Message -->
+    </div>
+
+    <!-- User Input Container -->
+    <div id="userInput">
+        <input type="text" id="textInput" name="userMessage" placeholder="Type your question here...."/>
+        <button type="submit" value="Send" id="buttonInput">Send</button>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Function to append messages to the chat container
+        function appendMessage(sender, message) {
+            let messageHTML = `<p class="${sender}Text"><span>${message}</span></p>`;
+            $('#chatbot').append(messageHTML);
+            $('#chatbot').scrollTop($('#chatbot')[0].scrollHeight); // Scroll to bottom
+        }
+
+        // Handle Enter key and Send button click events
+        $('#textInput').keypress(function(e) {
+            if (e.which === 13) { // Enter key pressed
+                sendMessage();
+            }
+        });
+
+        $('#buttonInput').click(function() {
+            sendMessage();
+        });
+
+        // Function to handle sending a message
+        function sendMessage() {
+            var message = $('#textInput').val().trim();
+            if (message !== '') {
+                appendMessage('user', 'You: ' + message); // Append user message
+                $('#textInput').val(''); // Clear input field
+
+                // Send message to server
+                $.ajax({
+                    url: '{% url "women_response" %}',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ 'message': message }),
+                    success: function(data) {
+                        appendMessage('bot', 'Bot: ' + data.response); // Append bot response
+                    },
+                    error: function() {
+                        appendMessage('bot', 'Bot: I am having trouble understanding.'); // Append error message
+                    }
+                });
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

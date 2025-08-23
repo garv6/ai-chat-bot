@@ -1,0 +1,510 @@
+{
+    "intents":[
+        {
+            "tag": "greeting",
+            "questions": ["Hi", "How are you?", "Is anyone there?", "Hello","hey"],
+            "responses": ["Hello!", "Hi there!", "How can I help you?"]
+        },
+        {
+          "tag": "nonsense",
+          "patterns": [
+            "ncdsbccb",
+            "ncsjsdcbdsjkc",
+            "What is my age?",
+            "asdfghjkl",
+            "What is me?",
+            "Random input"
+          ],
+          "responses": [
+            "I couldn't understand that. Please ask me about women's schemes like MMLBY, PMUY, or PG-IGSSG.",
+            "I'm here to help with women's schemes. Please ask a relevant question.",
+            "It seems you're asking something unrelated. I'm happy to assist with women's government schemes.",
+            "That doesn't seem related to the schemes I'm here to assist with. Please ask me about women's schemes!"
+          ]
+        }
+        ,
+        {
+          "tag": "incomplete_info",
+          "patterns": [
+            "Can you give eligibility of",
+            "Can you tell me about",
+            "Please provide details of",
+            "Tell me the eligibility for",
+            "Eligibility for",
+            "What is the eligibility of",
+            "Give me eligibility info for",
+            "Eligibility details",
+            "Can I know the eligibility",
+            "Tell me about eligibility",
+            "Tell me the benefits of",
+            "What is the application process for",
+            "Explain the documents required for",
+            "How to apply for",
+            "What’s the eligibility for",
+            "What are the benefits of",
+            "Tell me the documents for"
+          ],
+          "responses": [
+            "Please specify the scheme name so I can provide the details.",
+            "Could you mention the scheme name? I'll be happy to help you with its information.",
+            "Please provide the name of the scheme for more details."
+          ]
+        },
+        {
+          "tag": "ambiguous",
+          "patterns": [
+            "Can you help me?",
+            "Give me more details",
+            "Tell me more",
+            "I need information"
+          ],
+          "responses": [
+            "Sure! Could you specify the scheme or details you're looking for?",
+            "I can definitely help, but could you clarify your request?"
+          ]
+        },
+        {
+          "tag": "followup",
+          "patterns": [
+            "What about eligibility?",
+            "And the benefits?",
+            "Tell me how to apply"
+          ],
+          "responses": [
+            "Are you asking about the same scheme as before? Please clarify.",
+            "Could you confirm the scheme you're referring to so I can assist?"
+          ]
+        },
+        {
+          "tag": "incorrect_scheme",
+          "patterns": [
+            "What are the benefits of xyz scheme?",
+            "Eligibility for nonexistent scheme",
+            "How to apply for abcdef scheme"
+          ],
+          "responses": [
+            "I’m not familiar with that scheme. Could you ask about a known scheme like MMLBY, PMUY, or PG-IGSSG?",
+            "That scheme doesn't seem to exist. Please ask about one of the known women-centric schemes."
+          ]
+        },
+        {
+          "tag": "out_of_scope",
+          "patterns": [
+            "What's the weather?",
+            "Tell me a joke",
+            "What's the capital of India?"
+          ],
+          "responses": [
+            "I'm here to assist with women's schemes. Please let me know if you'd like to know about a specific scheme.",
+            "I can't provide information on that, but I can tell you about government schemes!"
+          ]
+        },
+        {
+          "tag": "clarification",
+          "patterns": [
+            "Can you explain that again?",
+            "What did you say?",
+            "I didn’t understand, can you repeat?"
+          ],
+          "responses": [
+            "Let me explain again. [Repeat previous response]",
+            "I'll explain again. What would you like to clarify?"
+          ]
+        },
+        {
+          "tag": "yes_no",
+          "patterns": [
+            "Yes",
+            "No",
+            "Okay",
+            "Sure"
+          ],
+          "responses": [
+            "Great! Let me continue assisting you.",
+            "Please let me know how I can further assist."
+          ]
+        },
+        {
+          "tag": "sentiment",
+          "patterns": [
+            "You're not helping",
+            "This isn't what I asked for",
+            "Why don't you understand?"
+          ],
+          "responses": [
+            "I'm sorry if I didn’t provide the information you need. Could you clarify your question so I can better assist?",
+            "Apologies for any confusion. Please specify your request, and I'll do my best to help!"
+          ]
+        },
+        {
+            "tag": "which_scheme",
+            "questions": ["Enlist all the schemes", "List all the available schemes", "name the schemes", "all the ", "what are the schemes?" ,"tell me about schemes" ,"eligibility of scheme" , "objective of schemes", "document for scheme" , "dates for scheme" , "what sre date for scheme" , " what is eligibility for scheme","what is objective for scheme", "who can apply for scheme","what are benefits","scheme benefits","farmer scheme","education scheme" , "women scheme","tell mi about women scheme","tell me about farmer scheme","tell me about education scheme","list education schemes","list women scheme","list farmer scheme"],
+            "responses": [
+                "Here are the main categories of schemes: 1) Women Schemes 2) Farmer Schemes 3) Education Schemes. Please ask about a health category for more details."
+            ]
+        },
+        {
+            "tag": "healthcare_scheme_name",
+            "questions": ["Enlist all the schemes related to health","List all the available schemes for health","name the schemes for health","all the health schemes","what are the schemes for health?"],
+            "responses": [
+                         "1)Aam Aadmi Bima Yojana 2)Bhamashah Swasthya Bima Yojana 3)Mahatma Jyotiba Phule Jan Arogya Yojana"
+                        ]
+        },
+        {
+            "tag": "aaby_details",
+            "questions": [
+              "What is Aam Aadmi Bima Yojana?",
+              "Tell me about the AABY scheme",
+              "What is the Aam Aadmi Bima Yojana?",
+              "Scheme details for Aam Aadmi Bima Yojana",
+              "Scheme details for aaby",
+              "What is AABY?"
+            ],
+            "responses": [
+              "The Aam Aadmi Bima Yojana (AABY) is a government-sponsored social security scheme launched in 2007, administered by the Life Insurance Corporation of India (LIC). Its primary objective is to provide affordable life insurance coverage to the unorganized sector in India. The scheme offers coverage of ₹30,000 for natural death, ₹75,000 for accidental death, and ₹37,500 for partial or permanent disability due to an accident. The premium of ₹200 per person per annum is shared between the central and state governments, with the beneficiary contributing ₹70. It also includes a scholarship benefit for the children of the insured in case of death. Claims must be submitted within 30 days of the incident."
+            ]
+          },
+          {
+            "tag": "aaby_objective",
+            "questions": [
+              "Objective of the Aam Aadmi Bima Yojana?",
+              "aaby Scheme objective",
+              "Aam Aadmi Bima Yojana objective",
+              "what are the objective of Aam Aadmi Bima Yojana",
+              "Purpose of the AABY scheme"
+            ],
+            "responses": [
+              "The objective of the Aam Aadmi Bima Yojana (AABY) is to provide financial support to economically weaker sections of society in India, particularly in the unorganized sector, in case of the death or disability of the earning member of the family."
+            ]
+          },
+          {
+            "tag": "aaby_eligibility",
+            "questions": [
+              "What are the eligibility criteria for AABY?",
+              "What are the eligibility criteria for Aam Aadmi Bima Yojana?",
+              "Who can apply for the Aam Aadmi Bima Yojana?",
+              "Eligibility for the AABY scheme",
+              "Eligibility for the Aam Aadmi Bima Yojana"
+            ],
+            "responses": [
+              "Eligibility criteria for the Aam Aadmi Bima Yojana (AABY) are as follows:\n\n- The applicant should be aged between 18 and 59 years.\n- The applicant's household annual income should not exceed ₹1,00,000, placing them below the poverty line.\n- The applicant should be employed in specific sectors such as landless agricultural laborers, rural artisans, fishermen, weavers, handicraft artisans, or engaged in similar activities in rural areas. Coverage also extends to urban workers like street vendors, ragpickers, and sanitation workers.\n- The applicant should not be covered under any other social security scheme, such as the National Pension Scheme or Employee's State Insurance Scheme."
+            ]
+          },
+          {
+            "tag": "aaby_benefits",
+            "questions": [
+              "What are the benefits of AABY?",
+              "Aam Aadmi Bima Yojana benefits",
+              "AABY benefits",
+              "What do I get from AABY?"
+            ],
+            "responses": [
+              "The Aam Aadmi Bima Yojana (AABY) provides financial coverage of ₹30,000 in case of natural death, ₹75,000 in case of accidental death, and ₹37,500 for partial or permanent disability due to an accident."
+            ]
+          },
+          {
+            "tag": "aaby_application_process",
+            "questions": [
+              "How to apply for AABY?",
+              "Application process for AABY",
+              "Application process forAam Aadmi Bima Yojana",
+              "How can I apply for the Aam Aadmi Bima Yojana?"
+            ],
+            "responses": [
+              "To apply for the Aam Aadmi Bima Yojana (AABY):\n\n1. Visit the nearest AABY center or insurance agent to obtain the application form.\n2. Fill in the application form with accurate details (personal information, income, occupation, and bank account details).\n3. Attach the necessary documents (Aadhaar card, age proof, address proof, bank account details, income certificate, and occupation proof).\n4. Submit the completed application form and supporting documents.\n5. The insurance agent will verify the application, and if approved, issue a policy certificate.\n6. The policy certificate will be sent to the applicant's registered address.\n7. The applicant can pay the premium amount annually or in installments as per policy terms."
+            ]
+          },
+          {
+            "tag": "aaby_required_documents",
+            "questions": [
+              "What documents are required for AABY?",
+              "Required documents for Aam Aadmi Bima Yojana",
+              "Documents needed for Aam Aadmi Bima Yojana application",
+              "Documents needed for AABY"
+            ],
+            "responses": [
+              "You will need the following documents for the Aam Aadmi Bima Yojana (AABY):\n\n1. Aadhaar Card\n2. Age Proof (e.g., birth certificate, school leaving certificate, or passport)\n3. Address Proof (e.g., driving license, electricity bill, or passport)\n4. Bank Account Details (active bank account, including account number and IFSC code)\n5. Income Certificate (indicating annual income)\n6. Occupation Proof (e.g., work ID card)"
+            ]
+          },
+          {
+            "tag": "aaby_important_dates",
+            "questions": [
+              "What are the important dates for AABY?",
+              "AABY dates",
+              "Aam Aadmi Bima dates",
+              "Aam Aadmi Bima Yojana dates",
+              "Application dates for AABY",
+              "Application dates for Aam Aadmi"
+            ],
+            "responses": [
+              "Important dates for the Aam Aadmi Bima Yojana (AABY) are:\n- Application start: [Insert Start Date]\n- Application end: [Insert End Date]\n- Policy issuance: [Insert Policy Issuance Date]\n- Premium payment deadlines: [Insert Payment Deadlines]"
+            ]
+          },
+          {
+            "tag": "aaby_contact_information",
+            "questions": [
+              "Who to contact for assistance regarding AABY?",
+              "Contact information for AABY",
+              "Help with AABY application",
+              "Help with Aam Aadmi Bima Yojana application",
+              "contact for Aam Aadmi Bima Yojana",
+              "contact AABY"
+            ],
+            "responses": [
+              "For assistance with the Aam Aadmi Bima Yojana (AABY), you can contact the nearest AABY center or insurance agent. Additionally, the toll-free number for inquiries is [Insert Toll-Free Number]."
+            ]
+          },
+          {
+            "tag": "aaby_official_links",
+            "questions": [
+              "Where can I find more information about AABY?",
+              "Official links for AABY",
+              "Official links for  Aam Aadmi Bima Yojana",
+              "AABY details",
+              "What website for AABY",
+              "What website for Aam Aadmi Bima Yojana"
+            ],
+            "responses": [
+              "You can find more information about the Aam Aadmi Bima Yojana (AABY) on the official website: https://labour.gov.in."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_details",
+            "questions": [
+              "What is Bhamashah Swasthya Bima Yojana?",
+              "Tell me about the Bhamashah Swasthya Bima Yojana",
+              "Tell me about the Bhamashah ",
+              "What is Bhamashah Swasthya Bima Yojana?",
+              "Bhamashah Swasthya Bima Yojana details",
+              "What is Bhamashah Yojana?"
+            ],
+            "responses": [
+              "Bhamashah Swasthya Bima Yojana is a health insurance scheme launched by the Government of Rajasthan. It aims to provide cashless treatment for secondary and tertiary care diseases to families living below the poverty line (BPL) and those in the economically weaker sections. The scheme covers hospitalization expenses, including pre and post-hospitalization costs, diagnostic tests, and medications."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_objective",
+            "questions": [
+              "Objective of the Bhamashah Swasthya Bima Yojana?",
+              "Bhamashah Swasthya Bima Yojana objective",
+              "Bhamashah yojana objective",
+              "Bhamashah  objective",
+              "Purpose of the Bhamashah scheme"
+            ],
+            "responses": [
+              "The objective of Bhamashah Swasthya Bima Yojana is to provide accessible and affordable healthcare services to the economically weaker sections of society, ensuring financial protection against medical expenses."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_eligibility",
+            "questions": [
+              "What are the eligibility criteria for Bhamashah Swasthya Bima Yojana?",
+              "Who can apply for the Bhamashah scheme?",
+              "Eligibility for Bhamashah Swasthya Bima Yojana"
+            ],
+            "responses": [
+              "Eligibility criteria for Bhamashah Swasthya Bima Yojana include:\n\n- Families living below the poverty line (BPL) in Rajasthan.\n- Families with an annual income of less than ₹3 lakh.\n- Registered beneficiaries under the Bhamashah Yojana are prioritized."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_benefits",
+            "questions": [
+              "What are the benefits of Bhamashah Swasthya Bima Yojana?",
+              "Bhamashah Swasthya Bima Yojana benefits",
+              "Bhamashah  benefits",
+              "Bhamashah  Yojana benefits",
+              "What do I get from Bhamashah Yojana?",
+              "What do I get from Bhamashah ?",
+              "What do I get from Bhamashah Swasthya Bima Yojana?"
+            ],
+            "responses": [
+              "Bhamashah Swasthya Bima Yojana offers cashless treatment for various medical procedures and hospitalization, covering pre and post-hospitalization expenses, and providing access to a network of empaneled hospitals."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_application_process",
+            "questions": [
+              "How to apply for Bhamashah Swasthya Bima Yojana?",
+              "Application process for Bhamashah Swasthya Bima Yojana",
+              "Application process for Bhamashah Yojana",
+              "How can I apply for Bhamashah scheme?"
+            ],
+            "responses": [
+              "To apply for Bhamashah Swasthya Bima Yojana:\n\n1. Visit the nearest Bhamashah center or access the official website.\n2. Fill out the application form with necessary details.\n3. Submit the required documents, including income proof and identity verification.\n4. The application will be verified, and eligible families will receive a health card."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_required_documents",
+            "questions": [
+              "What documents are required for Bhamashah Swasthya Bima Yojana?",
+              "Required documents for Bhamashah Swasthya Bima Yojana",
+              "Required documents for Bhamashah Yojana",
+              "Documents needed for Bhamashah Swasthya Bima Yojana application",
+              "Documents needed for Bhamashah  Yojana application",
+              "Documents needed for Bhamashah  Yojana "
+            ],
+            "responses": [
+              "Documents required for Bhamashah Swasthya Bima Yojana include:\n\n1. Aadhaar card or any valid ID proof.\n2. Income proof (e.g., salary slips, income certificate).\n3. Address proof (e.g., ration card, utility bill).\n4. Family details (to establish BPL status)."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_exclusions",
+            "questions": [
+              "Who is not eligible for Bhamashah Swasthya Bima Yojana?",
+              "Exclusions from the scheme",
+              "Who cannot apply for Bhamashah?"
+            ],
+            "responses": [
+              "Bhamashah Swasthya Bima Yojana does not cover:\n\n1. Families with an annual income exceeding ₹3 lakh.\n2. Individuals already covered under another health insurance scheme.\n3. Individuals who do not possess a Bhamashah health card."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_important_dates",
+            "questions": [
+              "What are the important dates for Bhamashah Swasthya Bima Yojana?",
+              "Bhamashah Swasthya Bima Yojana dates",
+              "Bhamashah  Yojana dates",
+              "Bhamashah dates",
+              "Application dates for Bhamashah"
+            ],
+            "responses": [
+              "Important dates for Bhamashah Swasthya Bima Yojana are:\n- Application start: Ongoing\n- Policy renewal: Annually\n- Claim submission: Typically within 30 days of hospitalization."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_contact_information",
+            "questions": [
+              "Who to contact for assistance regarding Bhamashah?",
+              "Contact information for Bhamashah",
+              "Help with Bhamashah application"
+            ],
+            "responses": [
+              "For assistance with Bhamashah Swasthya Bima Yojana, you can contact your nearest Bhamashah center. Additionally, you can reach the helpline at 181."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_official_links",
+            "questions": [
+              "Where can I find more information about Bhamashah?",
+              "Official links for Bhamashah",
+              "Bhamashah links",
+              "What website for Bhamashah"
+            ],
+            "responses": [
+              "You can find more information about Bhamashah Swasthya Bima Yojana on the official website: [Insert Bhamashah Website Link]."
+            ]
+          },
+          {
+            "tag": "mjphj_details",
+            "questions": [
+              "What is Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "Tell me about the MJPHJ scheme",
+              "What is Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              " Mahatma Jyotiba Phule Jan Arogya Yojana details",
+              " MJPHJ details",
+              "What is MJPHJ?"
+            ],
+            "responses": [
+              "Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) is a health insurance scheme launched by the Government of Maharashtra to provide healthcare coverage for economically vulnerable families. The scheme aims to cover secondary and tertiary care expenses, including hospitalization and surgical procedures, ensuring that eligible beneficiaries have access to essential medical services."
+            ]
+          },
+          {
+            "tag": "mjphj_objective",
+            "questions": [
+              "Objective of the Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "Mahatma Jyotiba Phule Jan Arogya Yojana objective",
+              "Mahatma Jyotiba  Yojana objective",
+              "MJPHJ objective",
+              "Purpose of MJPHJ",
+              "Purpose of Mahatma Jyotiba  Yojana"
+            ],
+            "responses": [
+              "The objective of Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) is to provide financial support and access to quality healthcare services for economically disadvantaged families in Maharashtra, thereby reducing the out-of-pocket expenditure on healthcare."
+            ]
+          },
+          {
+            "tag": "mjphj_eligibility",
+            "questions": [
+              "What are the eligibility criteria for MJPHJ?",
+              "What are the eligibility criteria for Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "What are the eligibility criteria for Mahatma Jyotiba Yojana?",
+              "Who can apply for Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "Eligibility for MJPHJ",
+              "Eligibility for  Mahatma Jyotiba Phule Jan Arogya Yojana"
+            ],
+            "responses": [
+              "Eligibility criteria for Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) include:\n\n- Families with an annual income below ₹1.50 lakh.\n- Families registered under the below-poverty-line (BPL) category.\n- Residents of Maharashtra are prioritized."
+            ]
+          },
+          {
+            "tag": "mjphj_benefits",
+            "questions": [
+              "What are the benefits of MJPHJ?",
+              " Mahatma Jyotiba Phule Jan Arogya Yojana benefits",
+              " Mahatma Jyotiba Phule  Yojana benefits",
+              " MJPHJ benefits",
+              "What do I get from MJPHJ?",
+              "What do I get from Mahatma Jyotiba Phule  Yojana benefits?"
+            ],
+            "responses": [
+              "Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) offers coverage for various medical expenses, including hospitalization, surgeries, diagnostic tests, and pre- and post-hospitalization costs, up to a certain limit per family."
+            ]
+          },
+          {
+            "tag": "mjphj_application_process",
+            "questions": [
+              "How to apply for MJPHJ?",
+              "How to apply for Mahatma Jyotiba Phule  Yojana?",
+              "Application process for Mahatma Jyotiba Phule  Yojana",
+              "Application process for MJPHJ",
+              "Application process for Mahatma Jyotiba Phule Jan Arogya Yojana",
+              "How can I apply for Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "How can I apply for MJPHJ?"
+            ],
+            "responses": [
+              "To apply for Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ):\n\n1. Visit the nearest Jan Arogya office or the official website.\n2. Fill in the application form with necessary details.\n3. Attach required documents including income proof and ID.\n4. Submit the form, and upon verification, you will receive an eligibility certificate."
+            ]
+          },
+          {
+            "tag": "mjphj_required_documents",
+            "questions": [
+              "What documents are required for MJPHJ?",
+              "Required documents for  Mahatma Jyotiba Phule Jan Arogya Yojana",
+              "Required documents for MJPHJ",
+              "Documents needed for MJPHJ application",
+              "Documents needed for Mahatma Jyotiba Phule  Yojana application"
+            ],
+            "responses": [
+              "Documents required for Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) include:\n\n1. Aadhaar card or any valid ID proof.\n2. Income proof (e.g., salary slips, income certificate).\n3. Address proof (e.g., utility bill).\n4. Family composition details."
+            ]
+          },
+          {
+            "tag": "mjphj_important_dates",
+            "questions": [
+              "What are the important dates forMahatma Jyotiba Phule  Yojana?",
+              "What are the important dates for MJPHJ?",
+              "MJPHJ dates",
+              "Mahatma Jyotiba Phule Jan Arogya Yojana dates",
+              "Application dates for MJPHJ",
+              "Application dates for Mahatma Jyotiba Phule Jan Arogya Yojana",
+              "Application dates for Mahatma Jyotiba Phule  Yojana"
+            ],
+            "responses": [
+              "Important dates for Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) are:\n- Application start: Ongoing\n- Policy renewal: Annually\n- Claim submission: Typically within 30 days of hospitalization."
+            ]
+          },
+          {
+            "tag": "mjphj_official_links",
+            "questions": [
+              "Where can I find more information about MJPHJ?",
+              "Official links for MJPHJ",
+              "MJPHJ details",
+              "What website for MJPHJ",
+              "What website forMahatma Jyotiba Phule Jan Arogya Yojana "
+            ],
+            "responses": [
+              "You can find more information about Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) on the official website: [Insert MJPHJ Website Link]."
+            ]
+          }
+    ]
+}

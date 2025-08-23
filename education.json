@@ -1,0 +1,236 @@
+{
+    "intents":[
+        {
+            "tag": "greeting",
+            "questions": ["Hi", "How are you?", "Is anyone there?", "Hello","hey"],
+            "responses": ["Hello!", "Hi there!", "How can I help you?"]
+        },
+        {
+            "tag": "which_scheme",
+            "questions": ["Enlist all the schemes", "List all the available schemes", "name the schemes", "all the ", "what are the schemes?" ,"tell me about schemes" ,"eligibility of scheme" , "objective of schemes", "document for scheme" , "dates for scheme" , "what sre date for scheme" , " what is eligibility for scheme","what is objective for scheme", "who can apply for scheme","what are benefits","scheme benefits","women scheme","farmer scheme","health scheme","tell me about farmer scheme","tell me about health scheme","tell me about women scheme","list farmer scheme","list women scheme","list health scheme"],
+            "responses": [
+                "Here are the main categories of schemes: 1) Women Schemes 2) Farmer Schemes 3) Education Schemes. Please ask about a education category for more details."
+            ]
+        },
+        {
+          "tag": "nonsense",
+          "questions": [
+            "ncdsbccb",
+            "ncsjsdcbdsjkc",
+            "What is my age?",
+            "asdfghjkl",
+            "What is me?",
+            "Random input"
+          ],
+          "responses": [
+            "I couldn't understand that. Please ask me about education schemes .",
+            "I'm here to help with education schemes. Please ask a relevant question.",
+            "It seems you're asking something unrelated. I'm happy to assist with education schemes.",
+            "That doesn't seem related to the schemes I'm here to assist with. Please ask me about education schemes!"
+          ]
+        }
+        ,
+        {
+          "tag": "incomplete_info",
+          "questions": [
+            "Can you give eligibility of",
+            "Can you tell me about",
+            "Please provide details of",
+            "Tell me the eligibility for",
+            "Eligibility for",
+            "What is the eligibility of",
+            "Give me eligibility info for",
+            "Eligibility details",
+            "Can I know the eligibility",
+            "Tell me about eligibility",
+            "Tell me the benefits of",
+            "What is the application process for",
+            "Explain the documents required for",
+            "How to apply for",
+            "What’s the eligibility for",
+            "What are the benefits of",
+            "Tell me the documents for"
+          ],
+          "responses": [
+            "Please specify the scheme name so I can provide the details.",
+            "Could you mention the scheme name? I'll be happy to help you with its information.",
+            "Please provide the name of the scheme for more details."
+          ]
+        },
+        {
+          "tag": "ambiguous",
+          "questions": [
+            "Can you help me?",
+            "Give me more details",
+            "Tell me more",
+            "I need information"
+          ],
+          "responses": [
+            "Sure! Could you specify the scheme or details you're looking for?",
+            "I can definitely help, but could you clarify your request?"
+          ]
+        },
+        {
+          "tag": "incorrect_scheme",
+          "questions": [
+            "What are the benefits of xyz scheme?",
+            "Eligibility for nonexistent scheme",
+            "How to apply for abcdef scheme"
+          ],
+          "responses": [
+            "I’m not familiar with that scheme. ",
+            "That scheme doesn't seem to exist. Please ask about one of the known education-centric schemes."
+          ]
+        },
+        {
+          "tag": "out_of_scope",
+          "questions": [
+            "What's the weather?",
+            "Tell me a joke",
+            "What's the capital of India?"
+          ],
+          "responses": [
+            "I'm here to assist with education schemes. Please let me know if you'd like to know about a specific scheme.",
+            "I can't provide information on that, but I can tell you about government schemes!"
+          ]
+        },
+        {
+          "tag": "clarification",
+          "questions": [
+            "Can you explain that again?",
+            "What did you say?",
+            "I didn’t understand, can you repeat?"
+          ],
+          "responses": [
+            "Let me explain again. [Repeat previous response]",
+            "I'll explain again. What would you like to clarify?"
+          ]
+        },
+        {
+          "tag": "yes_no",
+          "questions": [
+            "Yes",
+            "No",
+            "Okay",
+            "Sure"
+          ],
+          "responses": [
+            "Great! Let me continue assisting you.",
+            "Please let me know how I can further assist."
+          ]
+        },
+        {
+          "tag": "sentiment",
+          "questions": [
+            "You're not helping",
+            "This isn't what I asked for",
+            "Why don't you understand?"
+          ],
+          "responses": [
+            "I'm sorry if I didn’t provide the information you need. Could you clarify your question so I can better assist?",
+            "Apologies for any confusion. Please specify your request, and I'll do my best to help!"
+          ]
+        },
+        {
+            "tag": "education_scheme_name",
+            "questions": ["Enlist all the schemes related to education","List all the available schemes for education","name the schemes for education","all the education schemes","what are the schemes for education?"],
+            "responses": [
+                         "1)Bharati Scheme"
+                        ]
+        },
+        {
+            "tag": "bharati_scheme_details",
+            "questions": [
+              "What is the Bharati Scheme for Education?",
+              "Details about Bharati Scheme for Education",
+              "Tell me about Bharati Scheme for Education - Professional Education Course",
+              "What is Bharati Scheme for Education?",
+              "Scheme details for Bharati Scheme",
+              "details of bharti"
+            ],
+            "responses": [
+              "The Bharati Scheme for Education (Professional Education Course) is designed to provide financial support to SC and ST students pursuing professional courses. It aims to cover the tuition and other academic-related expenses to ensure that economically disadvantaged students from these communities can access professional education without financial hardship."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_objective",
+            "questions": [
+              "Objective of Bharati Scheme for Education?",
+              "What is the purpose of the Bharati Scheme?",
+              "Why was the Bharati Scheme for Education launched?"
+            ],
+            "responses": [
+              "The objective of the Bharati Scheme for Education is to promote higher education among Scheduled Caste (SC) and Scheduled Tribe (ST) students by offering financial assistance to those pursuing professional education courses. This helps improve their socio-economic status and ensures equal opportunities in the education system."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_eligibility",
+            "questions": [
+              "Who is eligible for Bharati Scheme?",
+              "Eligibility criteria for Bharati Scheme for Education",
+              "Who can apply for Bharati Scheme for Professional Education?",
+              "Who can apply for Bharati Scheme ?"
+            ],
+            "responses": [
+              "Eligibility for the Bharati Scheme for Education (Professional Education Course) includes:\n\n- The applicant must belong to the Scheduled Caste (SC) or Scheduled Tribe (ST) category.\n- The applicant must be pursuing a professional education course from a recognized institution.\n- The applicant�s family income must not exceed ?2,50,000 per annum."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_benefits",
+            "questions": [
+              "What are the benefits of Bharati Scheme?",
+              "What does Bharati Scheme offer?",
+              "Scheme benefits for Bharati Scheme for Education",
+              "Scheme benefits for Bharati Scheme for Education"
+            ],
+            "responses": [
+              "Under the Bharati Scheme for Education, students can receive the following benefits:\n\n- Full or partial tuition fee coverage\n- Reimbursement of examination and library fees\n- Hostel fee assistance\n- Book allowance for purchasing study materials"
+            ]
+          },
+          {
+            "tag": "bharati_scheme_application_process",
+            "questions": [
+              "How to apply for Bharati Scheme for Education?",
+              "Application process for Bharati Scheme",
+              "Steps to apply for Bharati Scheme for Professional Education"
+            ],
+            "responses": [
+              "To apply for the Bharati Scheme for Education, follow these steps:\n\n1. Obtain the application form from the official website or designated authority.\n2. Fill in the required details, such as personal information, course details, and income proof.\n3. Attach necessary documents, such as caste certificate, income certificate, and academic records.\n4. Submit the completed application form either online or at the designated office before the deadline.\n5. Await verification and approval from the authorities."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_required_documents",
+            "questions": [
+              "What documents are needed for Bharati Scheme?",
+              "Documents required for Bharati Scheme",
+              "Documents  for Bharati Scheme",
+              "Which documents are needed for applying Bharati Scheme?"
+            ],
+            "responses": [
+              "The following documents are required to apply for the Bharati Scheme for Education:\n\n- Caste Certificate (SC/ST)\n- Income Certificate (showing family income below ?2,50,000 per annum)\n- Academic records (previous mark sheets)\n- Admission letter or proof of enrolment in a professional education course\n- Bank account details\n- Aadhaar card"
+            ]
+          },
+          {
+            "tag": "bharati_scheme_faqs",
+            "questions": [
+              "FAQs about Bharati Scheme?",
+              "Where can I find FAQs on Bharati Scheme?",
+              "Bharati Scheme frequently asked questions"
+            ],
+            "responses": [
+              "Here are some frequently asked questions about the Bharati Scheme for Education:\n\n1. **What is the Bharati Scheme for Education?**\n   It provides financial support for SC and ST students pursuing professional courses.\n\n2. **Who is eligible to apply?**\n   SC/ST students with a family income below ?2,50,000 per annum and enrolled in a professional course.\n\n3. **What benefits does the scheme offer?**\n   It covers tuition fees, examination fees, and hostel charges.\n\n4. **How can I apply?**\n   Applications can be submitted through the official website or local authorities."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_official_links",
+            "questions": [
+              "Where can I find more information about Bharati Scheme?",
+              "Official website for Bharati Scheme?",
+              "Where to apply for Bharati Scheme?"
+            ],
+            "responses": [
+              "You can find more information about the Bharati Scheme for Education on the official website:https://www.theglobalscholarship.org/scholarship/bharati-scheme-for-education?source=main"
+            ]
+          }
+    ]
+}

@@ -1,0 +1,977 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "questions": ["Hi", "How are you?", "Is anyone there?", "Hello","hey"],
+            "responses": ["Hello!", "Hi there!", "How can I help you?"]
+        },
+        {
+            "tag": "which_scheme",
+            "questions": ["Enlist all the schemes", "List all the available schemes", "name the schemes", "all the ", "what are the schemes?" ,"tell me about schemes" ,"eligibility of scheme" , "objective of schemes", "document for scheme" , "dates for scheme" , "what sre date for scheme" , " what is eligibility for scheme","what is objective for scheme", "who can apply for scheme","what are benefits","scheme benefits"],
+            "responses": [
+                "Here are the main categories of schemes: 1) Women Schemes 2) Farmer Schemes 3) Education Schemes. Please ask about a specific category for more details."
+            ]
+        },
+        
+        {
+            "tag": "women_scheme_name",
+            "questions": ["Enlist all the schemes related to women","List all the available schemes for women","name the schemes for women","all the women schemes","what are the schemes for women?"],
+            "responses": [
+                         "1)Savitribai Jyotirao Phule Fellowship For Single Girl Child 2)Laadli Laxmi Scheme"
+                        ]
+        },
+        {
+            "tag": "farmer_scheme_name",
+            "questions": ["Enlist all the schemes related to farmer","List all the available schemes for agriculture","name the schemes for farmer","all the farmer schemes","what are the schemes for farmer?"],
+            "responses": [
+                         "1)Pradhan Mantri Kisan Samman Nidhi 2)Pradhan Mantri Fasal Bima Yojna 3)Chief Minister Agriculture and Food Processing Scheme "
+                        ]
+        },
+        {
+            "tag": "healthcare_scheme_name",
+            "questions": ["Enlist all the schemes related to health","List all the available schemes for health","name the schemes for health","all the health schemes","what are the schemes for health?"],
+            "responses": [
+                         "1)Aam Aadmi Bima Yojana 2)Bhamashah Swasthya Bima Yojana 3)Mahatma Jyotiba Phule Jan Arogya Yojana"
+                        ]
+        },
+        {
+            "tag": "education_scheme_name",
+            "questions": ["Enlist all the schemes related to education","List all the available schemes for education","name the schemes for education","all the education schemes","what are the schemes for education?"],
+            "responses": [
+                         "1)Bharati Scheme"
+                        ]
+        },
+        { 
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_For_Single_Girl_Child_scheme_name",
+            "questions": [
+              "Tell me about the Savitribai Jyotirao Phule Fellowship For Single Girl Child scheme",
+              " about the Savitribai Jyotirao scheme",
+              "Tell me about the Savitribai Jyotirao Phule  scheme",
+              "Give details Savitribai Jyotirao Phule  scheme",
+              "Scheme details about Savitribai Jyotirao Phule  scheme",
+              "details of savitribai scheme"
+            ],
+            "responses": [
+              "Savitribai Jyotirao Phule Fellowship for Single Girl Child (SJSGC) is a Fellowship Scheme by the University Grants Commission (UGC), Department of Higher Education, for pursuing research work leading to the award of a Ph.D. degree. ",
+              "Savitribai Jyotirao Phule Fellowship for Single Girl Child (SJSGC) is a Fellowship Scheme by the University Grants Commission (UGC), Department of Higher Education, for pursuing research work leading to the award of a Ph.D. degree. The target group of this scheme are the ‘single girl child’, i.e. the only girl child in the family without having any brother or sister. A girl scholar who is one of the twin daughters/fraternal daughters is also eligible to apply for fellowship under the scheme. The number of slots for the fellowship will be decided every year on the basis of eligible applications complete in all respects, received through online mode.."
+            ]
+          },
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child_objective",
+            "questions": [
+              "What is the objective of the Savitribai Jyotirao Phule  scheme?",
+              "Savitribai Jyotirao Phule  objective",
+              "Purpose of the Savitribai Jyotirao Phule ",
+              "objective of  Savitribai Jyotirao Phule ",
+              "objective of  Savitribai Jyotirao Phule scheme ",
+              "overview of  Savitribai Jyotirao Phule ",
+              "overview of  Savitribai scheme"
+            ],
+            "responses": [
+              "The objectives of the scheme are : \n i. To support the higher education of single girl children in Social Sciences.\n ii. To recognize the value of observance of the small family norm.\n iii. To recognize the norm of single girl children in society.\n iv. To propagate the concept of single girl child norm.\n v. To promote single girls in society."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__eligibility",
+            "questions": [
+              "What are the eligibility criteria for Savitribai Jyotirao Phule ?",
+              "Who can apply for Savitribai Jyotirao Phule ?",
+              "Eligibility for the Savitribai Jyotirao Phule scheme?",
+              "tell me eligibility of Savitribai Jyotirao Phule scheme?",
+              "tell me eligibility of Savitribai scheme?"
+            ],
+            "responses": [
+              "(i) Any single girl child of her parents pursuing Ph.D. in any stream/subject in recognized Universities/Colleges/Institutes is eligible to apply under the scheme.\n\n(ii) The scheme is applicable to such a single girl child who has registered herself in a regular, full-time Ph.D. program.\n\n(iii) Admission to Ph.D. courses in part-time/distance mode is not covered under the scheme. A scholar is not eligible for fellowship if the research is intended/pursued through open/part-time distance education mode or part-time mode.\n\n(iv) Girl students up to the age of 40 years for the general category and 45 years for the reserved categories i.e., SC/ST/OBC and PWD (Persons with Disabilities) as on the last date of submission of the online application are eligible.\n\n(v) Both the scholar receiving the fellowship and the institution concerned, where the scholar is pursuing her Ph.D., are responsible to ensure that the terms and conditions of these schemes are followed properly and only eligible candidates get the fellowship."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__benefits",
+            "questions": [
+              "What are the benefits of Savitribai Jyotirao Phule ?",
+              "Scheme benefits of Savitribai Jyotirao Phule ",
+              "What do I get from the Savitribai Jyotirao Phule  scheme?"
+            ],
+            "responses": [
+              "1. TENURE OF FELLOWSHIP:\nThe tenure of the fellowship is for five years and will be effective from 1st April of the selection year or the actual date of joining under the fellowship in the University/College/Institute, whichever is later. Fellowship will be granted up to the date of submission of Ph.D. Thesis or 5 years of tenure whichever is earlier. No extension is permissible beyond the total period of five years, and the fellow ceases to be a UGC research fellow immediately after the expiry of the due date.\n\n2. FINANCIAL ASSISTANCE:\n(i) Fellowship:\n1. JRF @ ₹ 31,000/- p.m. for initial two years (subject to satisfactory progress of research work)\n2. SRF @ ₹ 35,000/- p.m. for remaining tenure (subject to satisfactory progress of research work)\n(ii) Contingency:\nFor Humanities and Social Sciences: @ ₹ 10,000/- p.a. for the initial two years, @ ₹ 20,500/- p.a. for the remaining tenure.\nFor Science, Engineering, and Technology: @ ₹ 12,000/- p.a. for the initial two years, @ ₹ 25,000/- p.a. for the remaining tenure.\n(iii) Escort/Reader Assistance:\n@ ₹ 3,000/- p.m. in the case of ‘Divyang’ scholars.\n\nNote: At the end of tenure/termination of fellowship/resignation of scholar, the books, journals, and equipment purchased out of the contingency grant shall become the property of the institution concerned.\n\nHRA:\n(i) Hostel accommodation may be provided to the scholars by their institutions. In such cases, the scholar is eligible to draw only hostel fees excluding mess, electricity, water charges, etc. In case a scholar refuses the hostel accommodation, he/she shall not be eligible to draw HRA.\n(ii) In case of non-availability of hostel accommodation, the scholar may be provided with single accommodation by the host institution. In such cases, the rent paid by the scholar on an actual basis shall be reimbursed, subject to the ceiling of HRA as per Govt. of India norms.\n(iii) If the scholar makes her own arrangements of accommodation, he/she shall be entitled to draw HRA as per ceiling and categorization of cities by the Govt. of India. In case the scholar wishes to draw HRA, he/she is required to submit a certificate, in the prescribed format, to her institution.\n\nMEDICAL ASSISTANCE:\nNo separate/fixed medical assistance is provided. However, the scholars may avail the medical facilities available in their Institutions concerned.\n\nLEAVE:\n(i) Earned Leave for a maximum period of 30 days in a year in addition to public holidays may be taken by a scholar. However, they are not entitled to any other vacation, such as summer, winter, and pooja vacations, etc.\n(ii) Maternity/paternity leave as per the Govt. of India norms issued from time to time shall be available for female scholars at full rates of the fellowship once during the tenure of the fellowship. The period of leave without fellowship, if any, shall be counted towards the tenure. Besides this, an ‘Intermittent Break’ for a maximum total period of 1 year may also be permissible for women scholars. The break can be availed a maximum of 3 times during the entire period of the fellowship. However, the total duration of the break shall not exceed one year. No fellowship shall be available for the period of such break(s). This period of intermittent breaks shall not be counted towards the tenure of the fellowship, and thus effectively the total period of fellowship shall remain the same.\n(iii) Academic leave (without fellowship and other emoluments) shall be permissible only for one year throughout the tenure (for any kind of academic/teaching assignment/foreign visit in connection with research work). The period of leave without fellowship will be counted towards the tenure. Expenditure on foreign visits in connection to research work cannot be claimed from UGC.\n(iv) All kinds of leave shall be availed by the scholar only with due approval of the institution concerned."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__application_process",
+            "questions": [
+              "How to apply for Savitribai Jyotirao Phule ?",
+              "Application process for Savitribai Jyotirao Phule ",
+              "How can I apply for the Savitribai Jyotirao Phule  scheme?"
+            ],
+            "responses": [
+              "Applications are invited through online mode once in a year through advertisement in leading newspapers & employment news. Short notification is also uploaded in the UGC website i.e. www.ugc.ac.in\n\nStep 1: Read the Guidelines\nThis is the home page of the website: https://frg.ugc.ac.in/\n● 5 schemes are displayed on the Homepage.\n● Under each scheme, UGC guidelines are available. Before applying, kindly read the guidelines carefully and ensure your eligibility.\n\nStep 2: Registration\n● On the homepage, for registration, click on 'New User' for the scheme you need to apply.\n● Here, you need to fill in all the details for registration and provide an email address that will be used for all future correspondence.\n● Please keep ready a scanned copy of your passport-size photograph and signature (size up to 1MB, format: jpg), before registration.\n● The details provided at the registration stage will not be modified after submission. It will be reflected in the Profile.\n● Click on the 'Submit' button after filling in all details.\n\nStep 3: Login\n● After registration, you will receive an email from ugchelp@mail.inflibnet.ac.in with the Scheme Login Credentials to fill out the application form.\n● You need to fill in the received login credentials.\n● Please change the password while logging in for the first time. Remember the new password thereafter.\n\nStep 4: Dashboard\n● The details provided by you during Registration are now available in Profile.\n● Various icons displayed here will be shown in red color before complete details are entered. Once all details are filled in and submitted, the color of the icons will change to green.\n● Here, you need to click on the 'Eligibility Criteria' button.\n\nStep 5: Eligibility alert\n● Read all the criteria and click on the check box next to UGC guidelines.\n\nStep 6: Eligibility\n● Please provide all the required details here.\n● Proof of being a single girl child has to be submitted from the parents on an affidavit of ₹ 100/- stamp paper duly attested by SDM/First Class Magistrate/Tahsildar as per the prescribed proforma. In case, the parents are not alive, the affidavit can be submitted by the guardian of the Candidate. (Size: less than 1 MB)\n● Kindly note that, once submitted, the eligibility form will not be modified.\n● Click on the 'Submit' button.\n\nStep 7: Data Capturing Format\nAfter that, you click on the 'Apply Now' box (see on rectangle).\nHere, Data Capturing Dashboard will display where you need to fill in PG and Ph.D. details.\nClick on the PG Educational Qualification box.\n\nStep 8: PG details\n● Provide PG details.\n● Click on the 'Submit' button.\n\nStep 9: Ph.D. Details\n● Provide Ph.D.-related details and upload the required documents.\n● Click on the 'Submit' button.\n\nStep 10: Declaration\n● Please read the declaration carefully.\n● If you agree with the declaration, click on the check box next to 'I Agree with above.'\n● Click on the 'Submit' button."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__required_documents",
+            "questions": [
+              "What documents are required for Savitribai Jyotirao Phule ?",
+              "Required documents for Savitribai Jyotirao Phule ",
+              "Documents needed for application for Savitribai Jyotirao Phule "
+            ],
+            "responses": [
+              "● Scanned copy of your passport-size photograph and signature (size up to 1MB, format: jpg).\n● Complete Research proposal (size up to 5MB) and an abstract (size up to 1MB).\n● After filling out the application form, an auto-generated form will be displayed on your screen. Please take a printout of the same, get it signed by the HoD/Registrar, and upload it before the submission of the application form.\n● Proof of being a single girl child has to be submitted from the parents on an affidavit of Rs. 100/- stamp paper duly attested by SDM/First Class Magistrate/Tahsildar as per the prescribed proforma. In case, the parents are not alive, the affidavit can be submitted by the guardian of the Candidate (Size: less than 1MB)."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__important_dates",
+            "questions": [
+              "What are the important dates for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "What are the important dates for Savitribai ?",
+              "Scheme dates for Savitribai Jyotirao Phule Fellowship for Single Girl Child ",
+              "Application dates for Savitribai Jyotirao Phule Fellowship for Single Girl Child"
+            ],
+            "responses": [
+              "Dates for the scheme will be available on the official website."
+            ]
+          },
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__contact_information",
+            "questions": [
+              "Who to contact for assistance for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Contact information for Savitribai Jyotirao Phule Fellowship",
+              "Help with application for Savitribai Jyotirao Phule Fellowship"
+            ],
+            "responses": [
+              "The candidates can reach out to the helpdesk if they have any doubts regarding the UGC scholarship and fellowship schemes. Given below is the UGC helpline for scholarships/fellowships:\n\n● Address: UGC, Bahadur Shah Zafar Marg, New Delhi - 110002.\n● UGC Scholarship Contact No: 011-23604446, 011-23604200\n● Email ID: webmaster.ugc.help@gmail.com"
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child_faqs",
+            "questions": [
+              "Does submission of an application guarantee the award of a fellowship for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Is part-time or distance Ph.D. covered under the scheme Savitribai Jyotirao Phule Fellowship?",
+              "Who is responsible for incorrect information for  Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "What is Aadhaar Seeding for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "When does the Savitribai Jyotirao Phule Fellowship become payable?",
+              "How is the scholarship paid for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Is there validity to the scheme's benefits for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Can I apply offline for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "How is the application invited for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Do I need to complete the Savitribai Jyotirao Phule Fellowship for Single Girl Child in one sitting?"
+            ],
+            "responses": [
+              "No, submission of an application form does not guarantee a fellowship.\n\nAdmission to Ph.D. courses in part-time/distance mode is not covered under the scheme.\n\nThe applicant is responsible for any incorrect/incomplete information.\n\n'Aadhaar Seeding' refers to linking a bank account to an Aadhaar for direct disbursement of the fellowship.\n\nFellowships become payable after securing admission and starting classes.\n\nThe scholarship is paid through DBT.\n\nThe benefits last until the course duration is completed.\n\nApplications must be made online.\n\nThe process is free of cost.\n\nYou can save the application as a draft.\n\nMandatory fields have a red asterisk (*).\n\nFor assistance, contact UGC at 011-23604446 or webmaster.ugc.help@gmail.com."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child_official_links",
+            "questions": [
+              "Where can I find more information about Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Official links"
+            ],
+            "responses": [
+              "More information can be found at: https://www.myscheme.gov.in/schemes/sjpfsgc or https://frg.ugc.ac.in/"
+        
+            ]
+          },
+        
+          {
+            "tag": "Laadli_Laxmi_Scheme_scheme",
+            "questions": [
+              "Tell me about the Laadli Laxmi scheme",
+              "Give details about Laadli Laxmi scheme",
+              "Scheme details for Laadli Laxmi scheme"
+            ],
+            "responses": [
+              "Laadli Laxmi Scheme was launched on 6th July 2012 as one of the flagship programmes of the Department of Women & Child Development, Government of Goa with the intention to address the undesirable tendency of female foeticides and with an aim towards erasing the general perception that the birth of a girl in the family is the burden on her parents/guardian during her marriage. The objective of the scheme is to financially empower the girl child to meet educational and other expenses on becoming a major of age and to improve the female sex ratio in the State."
+            ]
+          },
+          {
+            "tag": "Laadli_Laxmi_Scheme_objective",
+            "questions": [
+              "What is the objective of the Laadli Laxmi scheme ?",
+              "Scheme objective for Laadli Laxmi scheme",
+              "Purpose of the Laadli Laxmi scheme",
+              "overview of Laadli Laxmi scheme"
+            ],
+            "responses": [
+              "The Ladli Laxmi Yojana is a significant initiative aimed at improving the lives of girl children in India. Here are the primary objectives of the scheme:\n\n1. Promote Girl-Child Education: Increase enrollment and retention of girls in schools by providing financial assistance and incentives.\n2. Eradicate Gender Discrimination: Challenge societal mindsets and promote equal dignity and respect for girl children.\n3. Ensure Financial Security: Provide long-term financial security through savings accounts and insurance coverage.\n4. Improve Health and Education Status: Enhance the overall health and educational opportunities for girls.\n5. Control Population Growth: Promote family planning and discourage the preference for boys after the birth of two girls.\n6. Prevent Female Infanticide/Foeticide: Create a positive attitude towards the birth of a girl child and prevent harmful practices.\n7. Discourage Child Marriage: Encourage marriage at a legally acceptable age."
+            ]
+          }
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_eligibility",
+            "questions": [
+              "What are the eligibility criteria for Laadli Laxmi scheme?",
+              "Who can apply for Laadli Laxmi scheme?",
+              "Eligibility for the Laadli Laxmi scheme",
+              "tell me eligibility of ladki bahin scheme"
+            ],
+            "responses": [
+              "1. The applicant should be a Girl.\n2. The applicant should be born in the State of Goa OR should be a resident of Goa for the last fifteen years.\n3. In case the applicant is a resident of Goa for the last fifteen years, she should have been educated in Goa for a minimum period of 7 years (continuous).\n4. The parental income of the applicant does not exceed ₹ 3,00,000 per annum.\n5. The applicant should qualify for ANY ONE of the following three criteria:\n    a) At least one of the parents of the applicant is born in Goa and is also a resident of Goa for the last fifteen years.\n    b) One of the parents of the applicant is residing in Goa for the last twenty-five years.\n\nNOTE: In case the applicant is an affected person of the Tillari Irrigation Project (a joint venture of the Government of Goa and the Government of Maharashtra) and was rehabilitated in the State of Goa, her application shall be sanctioned if she produces a certificate issued by the Collector, North Goa District, relaxing the condition of 10/15 years domicile in the State of Goa for various purposes for her family."
+            ]
+          }
+          
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_benefits",
+            "questions": [
+              "What are the benefits for Laadli Laxmi scheme?",
+              "Scheme benefits for Laadli Laxmi scheme",
+              "What do I get from the scheme?"
+            ],
+            "responses": [
+              "For Unmarried Beneficiaries (beneficiaries who attain the age of majority i.e. 18 years on or after 01-04-2012):\n1. Financial Assistance of ₹ 1,00,000, by means of a bank fixed deposit, jointly in the name of the Director (DoWCD) and the applicant.\n2. The fixed deposit shall be renewed annually automatically on maturity, along with the amount of interest accrued, till the date of claim by the applicant as per the scheme or until the age of 45 years, whichever is earlier.\n\nFor Married Beneficiaries (beneficiaries who have already attained the age of 18 years before 01-04-2012 and are in the age group of 19 to 45 years prospectively from 1st April, 2016):\n1. Financial Assistance of ₹ 1,00,000, by means of cash payment."
+            ]
+          }
+          
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_application_process",
+            "questions": [
+              "How to apply for Laadli Laxmi Scheme ?",
+              "Application process for Laadli Laxmi Scheme ",
+              "How can I apply for the Laadli Laxmi Scheme ?"
+            ],
+            "responses": [
+              "Applications are invited through offline mode :\nStep 1: In the application form given on https://www.goa.gov.in/wp-content/uploads/2021/01/Laadli-Laxmi-Scheme-Griha-Aadhar-Schme-Amendment-Notification.pdf , fill in all the mandatory fields, paste the passport-sized photograph (signed across), and attach copies of all the mandatory documents (self-attest if required).\nStep 2:The applicant should send the application to:\nDirector, Directorate of Women And Child Development, Panaji-Goa, 2nd floor, Old Education Building, 18th June Road, Altinho, Panaji, Goa - 403 001.\n\nNOTE: The application shall be submitted within one year, from the date of attaining the age of 18 years or from the date of Civil Marriage Registration. All applications received beyond the specified period of one year shall be rejected."
+            ]
+          }
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_required_documents",
+            "questions": [
+              "What documents are required for Laadli Laxmi Scheme ?",
+              "Required documents for Laadli Laxmi Scheme ",
+              "Documents needed for application of Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "1. Birth Certificate (Self-Attested)\n2. Any document as proof (Self-Attested) of 15 years of residence of the applicant in the State of Goa.\nNOTE: In lieu of the Residence Certificate, the previous School Leaving Certificate and the current Bonafide Student Certificate issued by the recognized Educational Institution in which the girl is presently studying can also be produced. However, in the case of girls who discontinued education at the school level, the gap period i.e., from the time of discontinuation of education till completion of 18 years of age/marriage as the case may be, may be proved by the production of residence certificate. In the case of graduates, the Certificates of passing of Xth, XIIth and Graduation are adequate evidence.\n3. Residence Certificate of the Parent(s) (15 years or 25 years) as the case may be.\nNOTE: In lieu of the Residence Certificate, any documentary evidence to prove the residence for the specified period can also be produced which may include:\n  (a) The land records i.e. tenancy rights, mundcarial rights, occupancy rights, etc;\n  (b) Employment certificate; or\n  (c) Any such records to the satisfaction of the Committee.\n  (d) In case of a girl whose father/mother is in service either with the State Government or the Central Government or the public sector undertakings, in lieu of the certificate of residence such applicant may produce the service certificate of 25 years issued by the Head of the Department. However, the girl should be born in Goa and should have studied in Goa up to class 10th.\n4. Birth Certificate of the parent(s).\nNOTE: If no birth certificate is available, one of the following documents can be produced showing the details namely the date and place of Birth of the parent(s):\n  (a) Baptism certificate;\n  (b) School leaving certificate of the parent(s);\n  (c) Any document which establishes that one of the grandparents of the girl has lived in Goa around the time of the date of birth claimed by the parent(s);\n  (d) Any such records, which establish the date of birth of the parent(s).\n5. Aadhaar card (for the applicants after 01-04-2013). However, the Government by separate Order may relax the requirement of producing the Aadhaar card and such other certificate(s), for a further period of time, as may be prescribed in the said Order.\n6. A Self-Declaration in the format as given in 'Annexure II' to this scheme.\n7. Annual Income Certificate of parents of the immediate previous financial year at the time of submission of application, issued by the Competent Authority. The Income Certificate shall include the annual income of the mother and father of the applicant taken together and not the income of the family.\n\nNOTE: If the applicant fulfils all the criteria and has submitted all her documents required as per the scheme but is unable to furnish her parent's documents due to the death of both parents, such an application shall be sanctioned if the applicant submits her 15 years of residence certificate and birth certificate along with death certificates of both parents. Submission of parental income certificate in case of such applicants shall be waived off.\n\nAdditional Documents:\nIn case of those beneficiaries who have already attained the age of 18 and above before 01-04-2012 and have got/are getting married hereinafter, may apply along with the attested copy of the Civil Marriage Registration Certificate (which may also include the first registration certificate) provided the certificate is dated on or after 01-04-2012 only."
+            ]
+          }
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_important_dates",
+            "questions": [
+              "What are the important dates for Laadli Laxmi Scheme ?",
+              "Scheme dates for Laadli Laxmi Scheme ",
+              "Application dates for Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "Here are some important dates related to the Ladli Laxmi Yojana:\nLaunch Date: The scheme was launched on May 2, 2007.\nEffective Date: It came into effect from April 1, 2007.\nEligibility Date: Girls born on or after January 1, 2006 are eligible for the scheme.\nApplication Deadline: The last date for application submission in 2023 was June 30, 2023.\nThe application deadlines for the Ladli Laxmi Yojana in 2024 haven't been officially announced yet. Typically, the deadlines are set annually, and updates are provided by the respective state governments or the implementing agencies."
+            ]
+          },
+          {
+            "tag": "Laadli_Laxmi_Scheme_contact_information",
+            "questions": [
+              "Who to contact for assistance for Laadli Laxmi Scheme ?",
+              "Contact information of Laadli Laxmi Scheme ",
+              "Help with application Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "Applicants should visit https://ladlilaxmi.mp.gov.in/ for contact information for the respective states."
+            ]
+          }
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_faqs",
+            "questions": [
+              "Where can I find FAQs for Laadli Laxmi Scheme ?",
+              "FAQs about Laadli Laxmi Scheme ",
+              "Frequently asked questions for Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "Q1: How will the operation of the scheme be conducted through the bank/financial institution? Can you explain the key terms and conditions mentioned in the Memorandum of Understanding (MoU)?\nA1: The operation of the scheme through the bank/financial institution will be governed by a Memorandum of Understanding (MoU), which outlines the terms and conditions related to the bank account, fixed deposit account/certificate, interest accrual, payment authorization procedure, and payment terms by the Government. The MoU also covers the process of crediting the Government on closure of individual accounts.\n\nQ2: Who Is Responsible For Deciding The Eligibility Of Applicants Under The Scheme?\nA2: The Committee responsible for deciding the eligibility of applicants under the scheme consists of the Secretary to the Government of Goa in charge of the Department of Women and Child Development as Chairperson, a Social Worker appointed by the Government as Member, an Additional/Joint Secretary to Government of Goa in charge of the Department of Finance as Member, and the Director of the Directorate of Women and Child Development as Member Secretary.\n\nQ3: Are The Decisions Made By The Committee Regarding Eligibility Final And Binding?\nA3: Yes, the decisions made by the Committee regarding eligibility are final and binding. The scheme does not allow any appeal or request for reconsideration of the Committee's decision.\n\nQ4: What Types Of Applications Are Referred To The Committee For Decision?\nA4: The Committee reviews applications from girl children who are orphans, destitute children, born outside a legitimate wedlock, adopted girl children, or any other cases that fall under the objective of the scheme. If the application is made by the guardians or the institutions/organizations taking care of the child, it is referred to the Committee.\n\nQ5: How Does The Scheme Address Situations Where Applicants Are Unable To Produce Necessary Documents Due To Their Parent's Opposition To Their Marriage?\nA5: In cases where applicants are unable to produce documents related to their parent's birth, residence, etc., due to their parent's opposition to their marriage, such applications are placed before the Committee for a decision.\n\nQ6: Where Can Eligible Applicants Obtain The Application Form For The Scheme?\nA6: Eligible applicants can obtain the application form (Annexure-I) from the designated Offices notified by the Director of Women and Child Development or designated branches of the bank concerned. The scheme strictly accepts applications in the specified format, and reprographic copies or forms in any other format are not accepted.\n\nQ7: What Happens To The Financial Assistance In Case The Beneficiary Passes Away After Marriage But Before Claiming The Benefit?\nA7: In the unfortunate event of the beneficiary's death after marriage but before claiming the benefit, the financial assistance will be released to the parents. If both the parents of the beneficiary have passed away, the assistance will be released to the guardian whose name is mentioned in the Laadli Laxmi application of the expired beneficiary.\n\nQ8: Under What Circumstances Can The Money Under The Fixed Deposit Be Withdrawn From The Bank/Financial Institution? What Documentation Is Required For The Withdrawal Process?\nA8: The money under the fixed deposit can be withdrawn from the bank/financial institution when the beneficiary produces the withdrawal order/letter from the Director of Women and Child Development or any other authorized official. Additionally, the beneficiary needs to personally present herself before the bank officials for the withdrawal process.\n\nQ9: What Happens If The Beneficiary Does Not Claim The Benefit Until Attaining The Age Of 45 Years?\nA9: If the beneficiary does not claim the benefit until attaining the age of 45 years, the fixed deposit will be closed, and the amount, along with the interest accrued, will be credited back to the Government. In such a scenario, no further assistance of any nature will be provided to the concerned beneficiary.\n\nQ10: What Are The Consequences For Individuals Who Avail Financial Assistance Under The Scheme Based On False Information Or By Concealing Material Information?\nA10: Individuals who avail financial assistance under the scheme by providing false information, submitting false declarations, or concealing material information may face criminal prosecution. In addition to any criminal prosecution, such individuals will also be debarred for life from receiving any benefits or assistance under any other schemes of the Government.\n\nQ11: How Is The Scheme Being Implemented Through The Bank/Financial Institution? Can You Explain The Process In Detail, Including The Steps Involved In Executing The Memorandum Of Understanding (MoU)?\nA11: The scheme is being implemented through the bank/financial institution by executing a detailed Memorandum of Understanding (MoU). This MoU outlines the terms and conditions governing the operation of the bank account, fixed deposit account/certificate, interest calculation, payment authorization procedures, terms of payment by the Government to the bank/financial institution, and the process of crediting the Government upon closure of individual accounts.\n\nQ12: Can You Elaborate On The Committee Responsible For Deciding Eligibility Doubts? How Does This Committee Ensure Fairness And Impartiality In Its Decisions?\nA12: The Committee consists of key officials, including the Secretary to Government of Goa in charge of the Department of Women and Child Development as Chairperson, a Social Worker appointed by the Government as Member, an Additional/Joint Secretary to Government of Goa in charge of the Department of Finance as Member, and the Director of the Directorate of Women and Child Development as Member Secretary.\n\nQ13: What Are Some Specific Cases That Might Require The Committee's Consideration Regarding Eligibility Doubts? Can You Provide Examples Of Scenarios That Fall Under The Scheme's Objectives?\nA13: The Committee reviews cases of girl children who are orphans, destitute children, born outside a legitimate wedlock, or adopted. Additionally, any other cases that align with the objective of the scheme are also considered by the Committee.\n\nQ14: Are There Any Provisions For Applicants Who Face Challenges In Producing Necessary Documents Related To Their Parent's Background Due To Family Opposition? How Does The Committee Handle Such Cases?\nA14: In cases where applicants are unable to produce documents pertaining to their parent's birth, residence, etc., due to their parent's opposition to their marriage, such applications are carefully examined by the Committee.\n\nQ15: Can You Provide More Information About The Application Form (Annexure-I) And Its Issuance? Are There Specific Designated Offices Or Bank Branches Responsible For Distributing The Application Forms?\nA15: The application form (Annexure-I) is serially numbered and issued by designated Offices notified by the Director of Women and Child Development or designated bank branches. It is essential to use the correct format, as forms in other formats or reprographic copies are not accepted under the scheme.\n\nQ16: How Does The Scheme Handle Situations Where Beneficiaries Pass Away After Marriage But Before Claiming The Benefit?\nA16: If a beneficiary passes away after marriage but before claiming the benefit, the financial assistance is provided to the parents, or to the guardian whose name is mentioned in the application if both parents are deceased."
+            ]
+          } 
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_official_links",
+            "questions": [
+              "Where can I find more information about Laadli Laxmi Scheme ?",
+              "Official links for Laadli Laxmi Scheme ",
+              "links for Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "Visit https://www.myscheme.gov.in/schemes/lls-g or https://ladlilaxmi.mp.gov.in/ for more information."
+            ]
+          },
+          {
+            "tag": "pmkisan_details",
+            "questions": [
+              "What is the pm kisan scheme?",
+              "Tell me about the scheme",
+              "What is Pradhan Mantri Kisan Samman Nidhi",
+              "pmkisan",
+              "What is pmkisan?"
+            ],
+            "responses": [
+              "The scheme 'Pradhan Mantri Kisan Samman Nidhi'Provides income support of ₹6,000 per year to small and marginal farmers in three installments of ₹2,000 each."
+            ]
+          },
+          {
+            "tag": "pmkisan_eligibility",
+            "questions": [
+              "What are the eligibility criteria for pmkisan?",
+              "Who can apply for pmkisan?",
+              "Eligibility for the pmkisan scheme",
+              "pmkisan eligibility",
+              "who are eligibile for pmkisan scheme",
+              "eligibility of pmkisan"
+            ],
+            "responses": [
+              "All landholding farmers' families, which have cultivable land holding in their names are eligible to get benefit under the scheme."
+            ]
+          },
+          {
+            "tag": "pmkisan_objective",
+            "questions": [
+              "Objective of the pmkisan scheme?",
+              "pmkisan Scheme objective",
+              "Purpose of the pmkisan scheme",
+              "overview of pmkisan",
+              "pmkisan objective"
+            ],
+            "responses": [
+              "The scheme aims to supplement the financial needs of all landholding farmers families by procuring various inputs to ensure proper crop health and appropriate yields, commensurate with the anticipated farm income as well as for domestic needs. Under the scheme an amount of ₹ 6000/- per year is released by the Central Government online directly into the bank accounts of the eligible farmers under Direct Benefit Transfer mode, subject to certain exclusions. "
+            ]
+          },
+          {
+            "tag": "pmkisan_benefits",
+            "questions": [
+              "What are the benefits of pmkisan?",
+              "pmkisan benefits",
+              "What do I get from the pmkisan scheme?"
+            ],
+            "responses": [
+              "Financial benefit of Rs. 6000 per annum per family payable in three equal installments of Rs 2000 each, every four months."
+            ]
+          },
+          {
+            "tag": "pmkisan_application_process",
+            "questions": [
+              "How to apply for pmkisan?",
+              "Application process for pmkisan scheme",
+              "How can I apply for the pmkisan scheme?"
+            ],
+            "responses": [
+              "Step 1: The following are the prerequisites for the enrollment process:Aadhaar CardLandholding paperSavings bank account\nStep 2: The VLE will fill in the complete details of farmer registration details like State, district, subdistrict block, and village, key in the Aadhaar number, Name of the beneficiary, category, Bank detail, Land Registration ID, and Date of birth as printed on Aadhaar card for authentication..\nStep 3: The VLE will fill in the Land details like Survey/ Kahta No., Khasra no., and area of land as mentioned in land holding papers. \nStep 4: Upload the supporting documents like Land, Aadhar, and Bank passbook.\nStep 5: Self-declaration accept and save the application form.\nStep 6: After saving the application form make payment through CSC ID.\nStep 7: Check the Beneficiary status through the Aadhaar number."
+            ]
+          },
+          {
+            "tag": "pmkisan_required_documents",
+            "questions": [
+              "What documents are required for pmkisan scheme?",
+              "Required documents for pmkisan",
+              "Documents needed for pmkisan application"
+            ],
+            "responses": [
+              "You will need the following documents for the application:\n\n1.Aadhaar Card,Landholding papers,Savings Bank Account."
+            ]
+          },
+          {
+            "tag": "pmfby_details",
+            "questions": [
+              "What is the pmfby?",
+              "Tell me about the Pradhan Mantri Fasal Bima Yojna",
+              "What is Pradhan Mantri Fasal Bima Yojna",
+              "Pradhan Mantri Fasal Bima Yojna Scheme",
+              "pmfby",
+              "What is pmfby?",
+              "Objective of the Pradhan Mantri Fasal Bima Yojna?",
+              "Pradhan Mantri Fasal Bima Yojna objective",
+              "Purpose of the Pradhan Mantri Fasal Bima Yojna"
+            ],
+            "responses": [
+              "The Pradhan Mantri Fasal Bima Yojna works on the One Nation, One Crop, One Premium.\nTo provide insurance coverage and financial support to the farmers in the event of failure of any of the notified crops as a result of natural calamities, pests & diseases.\nTo stabilize the income of farmers to ensure their continuance in farming.\nTo encourage farmers to adopt innovative and modern agricultural practices.\nTo ensure the flow of credit to the agriculture sector."
+            ] 
+        },
+        {
+            "tag": "pmfby_eligibility",
+            "questions": [
+              "What are the Pradhan Mantri Fasal Bima Yojna eligibility criteria?",
+              "Who can apply for Pradhan Mantri Fasal Bima Yojna?",
+              "Pradhan Mantri Fasal Bima Yojna Eligibility",
+              "eligibility for pmfby",
+              "eliigibility for Pradhan Mantri Fasal Bima Yojna"
+            ],
+            "responses": [
+                   "The farmer must be a cultivator or a sharecropper on the insured land.Farmers must have a valid and authenticated land ownership certificate or a valid land tenancy agreement.\nThe farmer must have applied for insurance coverage within the prescribed time frame, which is generally within 2 weeks of the start of the sowing season.\nThey must not have received any compensation for the same crop loss from any other source.The farmer should have a valid bank account and provide details of their bank account, along with a valid identity proof, at the time of enrollmentAll farmers growing notified crops in a notified area during the season who have an insurable interest in the crop are eligible."
+            ]
+          },
+          {
+            "tag": "pmfby_benefits",
+            "questions": [
+              "Pradhan Mantri Fasal Bima Yojna benefits?",
+              "What are benefits for Pradhan Mantri Fasal Bima Yojna",
+              "What do I get from the Pradhan Mantri Fasal Bima Yojna?",
+              "what are benefits of pmfby",
+              "what do I get from pmfby"
+            ],
+            "responses": [
+              "The benefits of this scheme are mentioned as under:\nComprehensive insurance coverage for Kharif and Rabi crops.\nAdd on the coverage available for specific circumstances.\nOptional for farmers, both loanee and non-loanee.\nStability in the income of farmers so that they can continue farming."
+            ]
+          },
+          {
+            "tag": "pmfby_application_process",
+            "questions": [
+              "How to apply for Pradhan Mantri Fasal Bima Yojna?",
+              "Pradhan Mantri Fasal Bima Yojna Application process",
+              "How can I apply for the Pradhan Mantri Fasal Bima Yojna?",
+              "how to apply for pmfby",
+              "application of pmfby",
+              "how to claim for pmfby"
+            ],
+            "responses": [
+              "Applicant farmers have to visit the official portal https://pmfby.gov.in/.\nClick on Farmer CornerIf the applicants do not have an account on the portal, click on Guest Farmer.\n Fill in all the details correctly and click on submit.\n An account will be created.Fill out the form in the insurance scheme and provide the required details.\nHow to Claim?\nIn case of crop loss, farmers are required to file a claim with the insurance company within the prescribed time frame, which is generally within 72 hours of the occurrence of the loss.\nList of concerned person/company details on the portal and click in Report Crop Loss or download the app and report crop loss.\nThe claim must be accompanied by supporting documents, such as photographs of the damaged crop and a report from the village-level committee (VLC) or the agriculture department."
+            ]
+          },
+          {
+            "tag": "pmfby_required_documents",
+            "questions": [
+              "What documents are required for Pradhan Mantri Fasal Bima Yojna?",
+              "Pradhan Mantri Fasal Bima Yojna Required documents",
+              "Documents needed for application forPradhan Mantri Fasal Bima Yojna",
+              "documents for pmfby",
+              "what are documents for pmfby"
+            ],
+            "responses": [
+              "Bank account number.\nAadhaar card.Khasra number of land.\nAgreement photocopy.\nRation card.\nVoter ID.\nDriving license.\nPassport-size photograph of the farmer."
+            ]
+          },
+          {
+            "tag": "pmfby_official_links",
+            "questions": [
+              "Where can I find more information about  Pradhan Mantri Fasal Bima Yojna?",
+              " Pradhan Mantri Fasal Bima Yojna Official links",
+              "Which site for  Pradhan Mantri Fasal Bima Yojna",
+              "What website for  Pradhan Mantri Fasal Bima Yojna",
+              "Give official link for  Pradhan Mantri Fasal Bima Yojna",
+              "official link for pmfby"
+            ],
+            "responses": [
+              "You can find more information about  Pradhan Mantri Fasal Bima Yojna on the official website: https://pmfby.gov.in/."
+            ]
+          },
+          {
+            "tag": "cmafps_details",
+            "questions": [
+              "What is the cmafps?",
+              "What is the cmafps?",
+              "Tell me about the Chief Minister Agriculture and Food Processing Scheme",
+              "What is Chief Minister Agriculture and Food Processing Scheme",
+              "Chief Minister Agriculture and Food Processing Scheme",
+              "cmafps",
+              "What is cmafps?",
+              "Objective of the Chief Minister Agriculture and Food Processing Scheme?",
+              "Chief Minister Agriculture and Food Processing Scheme",
+              "Purpose of the Chief Minister Agriculture and Food Processing Scheme"
+            ],
+            "responses": [
+                 "Chief Minister Agriculture and Food Processing Scheme is being implemented in the state since 2017-18 which  has been extended for the next five years till the year 2026-27 as per the government resolution dated 17 May 2022.  The main objectives of the scheme are to encourage model technology based projects and quality enhancement of agriculture produce, to encourage exports, to create skill manpower for agro and food processing and employment generation through small and medium agro and food processing units in rural areas.."
+            ]        
+          },
+          {
+            "tag": "cmafps_eligibility",
+            "questions": [
+              "What are the Chief Minister Agriculture and Food Processing Scheme eligibility criteria?",
+              "Who can apply for Chief Minister Agriculture and Food Processing Scheme?",
+              "Chief Minister Agriculture and Food Processing Scheme",
+              "eligibility for cmafps",
+              "who can apply for cmafps"
+          ],
+            "responses": [
+              "The beneficiary should have age above 18 years\nThe beneficiary should have Aadhaar Card/ Pan Card .\nThe beneficiary should have Good Bank CIBIL Score\nThe beneficiary have 7/12 certificate and 8 -A certificate or Lease documents."
+                       ]
+          },
+          {
+            "tag": "cmafps_benefits",
+            "questions": [
+              "Chief Minister Agriculture and Food Processing Scheme benefits?",
+              "What are benefits for Chief Minister Agriculture and Food Processing Scheme",
+              "What do I get from the Chief Minister Agriculture and Food Processing Scheme?",
+              "what are benefits of cmafps",
+              "what do i get from cmafps"
+            ],
+            "responses": [
+            "Elements of the Scheme - Under this scheme, three components are included as follows.\nComponent No.1- Establishment of agriculture and food processing units, their upgradation and modernization.\nComponent No. 2 - The cold chain.To establish food processing projects related to pre-processing centre and integrated cold chain. \nFinancial Assistance:\n 30% subsidy for construction of factories and machines of Processing Unit (Civil work for housing processing unit) and maximum limit of Rs.50.00 lakhs.\n Subsidy will be given on the basis of “Credit Linked Back ended subsidy”  in two similar instalments After completion of the project and b) After full commercial production.\n Loan amount should one and half times more than subsidy."
+            ]
+          },
+          {
+            "tag": "cmafps_application_process",
+            "questions": [
+              "How to apply for Chief Minister Agriculture and Food Processing Scheme?",
+              "Chief Minister Agriculture and Food Processing Scheme",
+              "How can I apply for the Chief Minister Agriculture and Food Processing Scheme?",
+              "apply for cmafps",
+              "how to apply for cmafps"
+            ],
+            "responses": [
+              "1.Applicant (Entrepreneur)\n 2.Proposal submitted with bank loan approval to District Superintendent Agriculture Officer\n 3.Pre-project feasibility study through the Deputy Director of Agriculture, District Superintendent Agriculture Office/Sub-divisional agricultural Officer and with the recommendation of the District Project Implementation Committee\n 4.Major Document Verification for Grant Payment- CA Certificate, Original Bank Loan Sanction, Original Bank Appraisal, CE -Civil & Mechanical, Bank Reserve fund Acc. Details, recommendation of District level Project Implementation Committee and strategic inspection report etc.\n 5.In-principle approval of eligible projects in Commissionerate level Project Approval Committee meeting\n 6.As per the recommendation of the District level Project Implementation Committee, after the completion of the project construction, the first phase and the second phase, when the project is in full production capacity, the subsidy will be deposited in the reserve fund account of the bank."
+            ]
+          },
+          {
+            "tag": "cmafps_required_documents",
+            "questions": [
+              "What documents are required for cmafps?",
+              " Chief Minister Agriculture and Food Processing Scheme Required documents",
+              "Documents needed for application for Chief Minister Agriculture and Food Processing Scheme",
+              "Documents needed for application for cmafps"
+            ],
+            "responses": [
+              "Beneficiary Application (Annexure II)\n2.Bank Loan Sanction Letter (Original)\n3.Bank Appraisal (Original)\n4.7/12, 8A (Original) or Agreement\n5.PAN card of individual/business, Aadhaar card\n6.Enterprise Registration Certificate (Udyam Registration)\n7.Detailed Project Report (DPR) of the project (Original)\n8.A flow chart of the project's process output\n9.Notarized Agreement to be submitted for Project Construction (Annexure-III)\n10.Construction Blue Print (Bank Attested)\n11.Construction Budget (Bank Attested)\n12.Machinery Quotation (Bank Attested)\n13.Pre-project feasibility study report (Annexure-V)\n14.Recommendation Letter of District Level Project Implementation Committee (Annexure- VI)\n15.Audit reports for last three years (Only for Upgradation, Expansion and Modernization Projects)."
+            ]
+          },
+          {
+            "tag": "aaby_details",
+            "questions": [
+              "What is Aam Aadmi Bima Yojana?",
+              "Tell me about the AABY scheme",
+              "What is the Aam Aadmi Bima Yojana?",
+              "Scheme details for Aam Aadmi Bima Yojana",
+              "Scheme details for aaby",
+              "What is AABY?"
+            ],
+            "responses": [
+              "The Aam Aadmi Bima Yojana (AABY) is a government-sponsored social security scheme launched in 2007, administered by the Life Insurance Corporation of India (LIC). Its primary objective is to provide affordable life insurance coverage to the unorganized sector in India. The scheme offers coverage of ₹30,000 for natural death, ₹75,000 for accidental death, and ₹37,500 for partial or permanent disability due to an accident. The premium of ₹200 per person per annum is shared between the central and state governments, with the beneficiary contributing ₹70. It also includes a scholarship benefit for the children of the insured in case of death. Claims must be submitted within 30 days of the incident."
+            ]
+          },
+          {
+            "tag": "aaby_objective",
+            "questions": [
+              "Objective of the Aam Aadmi Bima Yojana?",
+              "aaby Scheme objective",
+              "Aam Aadmi Bima Yojana objective",
+              "what are the objective of Aam Aadmi Bima Yojana",
+              "Purpose of the AABY scheme"
+            ],
+            "responses": [
+              "The objective of the Aam Aadmi Bima Yojana (AABY) is to provide financial support to economically weaker sections of society in India, particularly in the unorganized sector, in case of the death or disability of the earning member of the family."
+            ]
+          },
+          {
+            "tag": "aaby_eligibility",
+            "questions": [
+              "What are the eligibility criteria for AABY?",
+              "What are the eligibility criteria for Aam Aadmi Bima Yojana?",
+              "Who can apply for the Aam Aadmi Bima Yojana?",
+              "Eligibility for the AABY scheme",
+              "Eligibility for the Aam Aadmi Bima Yojana"
+            ],
+            "responses": [
+              "Eligibility criteria for the Aam Aadmi Bima Yojana (AABY) are as follows:\n\n- The applicant should be aged between 18 and 59 years.\n- The applicant's household annual income should not exceed ₹1,00,000, placing them below the poverty line.\n- The applicant should be employed in specific sectors such as landless agricultural laborers, rural artisans, fishermen, weavers, handicraft artisans, or engaged in similar activities in rural areas. Coverage also extends to urban workers like street vendors, ragpickers, and sanitation workers.\n- The applicant should not be covered under any other social security scheme, such as the National Pension Scheme or Employee's State Insurance Scheme."
+            ]
+          },
+          {
+            "tag": "aaby_benefits",
+            "questions": [
+              "What are the benefits of AABY?",
+              "Aam Aadmi Bima Yojana benefits",
+              "AABY benefits",
+              "What do I get from AABY?"
+            ],
+            "responses": [
+              "The Aam Aadmi Bima Yojana (AABY) provides financial coverage of ₹30,000 in case of natural death, ₹75,000 in case of accidental death, and ₹37,500 for partial or permanent disability due to an accident."
+            ]
+          },
+          {
+            "tag": "aaby_application_process",
+            "questions": [
+              "How to apply for AABY?",
+              "Application process for AABY",
+              "Application process forAam Aadmi Bima Yojana",
+              "How can I apply for the Aam Aadmi Bima Yojana?"
+            ],
+            "responses": [
+              "To apply for the Aam Aadmi Bima Yojana (AABY):\n\n1. Visit the nearest AABY center or insurance agent to obtain the application form.\n2. Fill in the application form with accurate details (personal information, income, occupation, and bank account details).\n3. Attach the necessary documents (Aadhaar card, age proof, address proof, bank account details, income certificate, and occupation proof).\n4. Submit the completed application form and supporting documents.\n5. The insurance agent will verify the application, and if approved, issue a policy certificate.\n6. The policy certificate will be sent to the applicant's registered address.\n7. The applicant can pay the premium amount annually or in installments as per policy terms."
+            ]
+          },
+          {
+            "tag": "aaby_required_documents",
+            "questions": [
+              "What documents are required for AABY?",
+              "Required documents for Aam Aadmi Bima Yojana",
+              "Documents needed for Aam Aadmi Bima Yojana application",
+              "Documents needed for AABY"
+            ],
+            "responses": [
+              "You will need the following documents for the Aam Aadmi Bima Yojana (AABY):\n\n1. Aadhaar Card\n2. Age Proof (e.g., birth certificate, school leaving certificate, or passport)\n3. Address Proof (e.g., driving license, electricity bill, or passport)\n4. Bank Account Details (active bank account, including account number and IFSC code)\n5. Income Certificate (indicating annual income)\n6. Occupation Proof (e.g., work ID card)"
+            ]
+          },
+          {
+            "tag": "aaby_important_dates",
+            "questions": [
+              "What are the important dates for AABY?",
+              "AABY dates",
+              "Aam Aadmi Bima dates",
+              "Aam Aadmi Bima Yojana dates",
+              "Application dates for AABY",
+              "Application dates for Aam Aadmi"
+            ],
+            "responses": [
+              "Important dates for the Aam Aadmi Bima Yojana (AABY) are:\n- Application start: [Insert Start Date]\n- Application end: [Insert End Date]\n- Policy issuance: [Insert Policy Issuance Date]\n- Premium payment deadlines: [Insert Payment Deadlines]"
+            ]
+          },
+          {
+            "tag": "aaby_contact_information",
+            "questions": [
+              "Who to contact for assistance regarding AABY?",
+              "Contact information for AABY",
+              "Help with AABY application",
+              "Help with Aam Aadmi Bima Yojana application",
+              "contact for Aam Aadmi Bima Yojana",
+              "contact AABY"
+            ],
+            "responses": [
+              "For assistance with the Aam Aadmi Bima Yojana (AABY), you can contact the nearest AABY center or insurance agent. Additionally, the toll-free number for inquiries is [Insert Toll-Free Number]."
+            ]
+          },
+          {
+            "tag": "aaby_official_links",
+            "questions": [
+              "Where can I find more information about AABY?",
+              "Official links for AABY",
+              "Official links for  Aam Aadmi Bima Yojana",
+              "AABY details",
+              "What website for AABY",
+              "What website for Aam Aadmi Bima Yojana"
+            ],
+            "responses": [
+              "You can find more information about the Aam Aadmi Bima Yojana (AABY) on the official website: https://labour.gov.in."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_details",
+            "questions": [
+              "What is Bhamashah Swasthya Bima Yojana?",
+              "Tell me about the Bhamashah Swasthya Bima Yojana",
+              "Tell me about the Bhamashah ",
+              "What is Bhamashah Swasthya Bima Yojana?",
+              "Bhamashah Swasthya Bima Yojana details",
+              "What is Bhamashah Yojana?"
+            ],
+            "responses": [
+              "Bhamashah Swasthya Bima Yojana is a health insurance scheme launched by the Government of Rajasthan. It aims to provide cashless treatment for secondary and tertiary care diseases to families living below the poverty line (BPL) and those in the economically weaker sections. The scheme covers hospitalization expenses, including pre and post-hospitalization costs, diagnostic tests, and medications."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_objective",
+            "questions": [
+              "Objective of the Bhamashah Swasthya Bima Yojana?",
+              "Bhamashah Swasthya Bima Yojana objective",
+              "Bhamashah yojana objective",
+              "Bhamashah  objective",
+              "Purpose of the Bhamashah scheme"
+            ],
+            "responses": [
+              "The objective of Bhamashah Swasthya Bima Yojana is to provide accessible and affordable healthcare services to the economically weaker sections of society, ensuring financial protection against medical expenses."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_eligibility",
+            "questions": [
+              "What are the eligibility criteria for Bhamashah Swasthya Bima Yojana?",
+              "Who can apply for the Bhamashah scheme?",
+              "Eligibility for Bhamashah Swasthya Bima Yojana"
+            ],
+            "responses": [
+              "Eligibility criteria for Bhamashah Swasthya Bima Yojana include:\n\n- Families living below the poverty line (BPL) in Rajasthan.\n- Families with an annual income of less than ₹3 lakh.\n- Registered beneficiaries under the Bhamashah Yojana are prioritized."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_benefits",
+            "questions": [
+              "What are the benefits of Bhamashah Swasthya Bima Yojana?",
+              "Bhamashah Swasthya Bima Yojana benefits",
+              "Bhamashah  benefits",
+              "Bhamashah  Yojana benefits",
+              "What do I get from Bhamashah Yojana?",
+              "What do I get from Bhamashah ?",
+              "What do I get from Bhamashah Swasthya Bima Yojana?"
+            ],
+            "responses": [
+              "Bhamashah Swasthya Bima Yojana offers cashless treatment for various medical procedures and hospitalization, covering pre and post-hospitalization expenses, and providing access to a network of empaneled hospitals."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_application_process",
+            "questions": [
+              "How to apply for Bhamashah Swasthya Bima Yojana?",
+              "Application process for Bhamashah Swasthya Bima Yojana",
+              "Application process for Bhamashah Yojana",
+              "How can I apply for Bhamashah scheme?"
+            ],
+            "responses": [
+              "To apply for Bhamashah Swasthya Bima Yojana:\n\n1. Visit the nearest Bhamashah center or access the official website.\n2. Fill out the application form with necessary details.\n3. Submit the required documents, including income proof and identity verification.\n4. The application will be verified, and eligible families will receive a health card."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_required_documents",
+            "questions": [
+              "What documents are required for Bhamashah Swasthya Bima Yojana?",
+              "Required documents for Bhamashah Swasthya Bima Yojana",
+              "Required documents for Bhamashah Yojana",
+              "Documents needed for Bhamashah Swasthya Bima Yojana application",
+              "Documents needed for Bhamashah  Yojana application",
+              "Documents needed for Bhamashah  Yojana "
+            ],
+            "responses": [
+              "Documents required for Bhamashah Swasthya Bima Yojana include:\n\n1. Aadhaar card or any valid ID proof.\n2. Income proof (e.g., salary slips, income certificate).\n3. Address proof (e.g., ration card, utility bill).\n4. Family details (to establish BPL status)."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_exclusions",
+            "questions": [
+              "Who is not eligible for Bhamashah Swasthya Bima Yojana?",
+              "Exclusions from the scheme",
+              "Who cannot apply for Bhamashah?"
+            ],
+            "responses": [
+              "Bhamashah Swasthya Bima Yojana does not cover:\n\n1. Families with an annual income exceeding ₹3 lakh.\n2. Individuals already covered under another health insurance scheme.\n3. Individuals who do not possess a Bhamashah health card."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_important_dates",
+            "questions": [
+              "What are the important dates for Bhamashah Swasthya Bima Yojana?",
+              "Bhamashah Swasthya Bima Yojana dates",
+              "Bhamashah  Yojana dates",
+              "Bhamashah dates",
+              "Application dates for Bhamashah"
+            ],
+            "responses": [
+              "Important dates for Bhamashah Swasthya Bima Yojana are:\n- Application start: Ongoing\n- Policy renewal: Annually\n- Claim submission: Typically within 30 days of hospitalization."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_contact_information",
+            "questions": [
+              "Who to contact for assistance regarding Bhamashah?",
+              "Contact information for Bhamashah",
+              "Help with Bhamashah application"
+            ],
+            "responses": [
+              "For assistance with Bhamashah Swasthya Bima Yojana, you can contact your nearest Bhamashah center. Additionally, you can reach the helpline at 181."
+            ]
+          },
+          {
+            "tag": "bhamashah_swasthya_bima_official_links",
+            "questions": [
+              "Where can I find more information about Bhamashah?",
+              "Official links for Bhamashah",
+              "Bhamashah links",
+              "What website for Bhamashah"
+            ],
+            "responses": [
+              "You can find more information about Bhamashah Swasthya Bima Yojana on the official website: [Insert Bhamashah Website Link]."
+            ]
+          },
+          {
+            "tag": "mjphj_details",
+            "questions": [
+              "What is Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "Tell me about the MJPHJ scheme",
+              "What is Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              " Mahatma Jyotiba Phule Jan Arogya Yojana details",
+              " MJPHJ details",
+              "What is MJPHJ?"
+            ],
+            "responses": [
+              "Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) is a health insurance scheme launched by the Government of Maharashtra to provide healthcare coverage for economically vulnerable families. The scheme aims to cover secondary and tertiary care expenses, including hospitalization and surgical procedures, ensuring that eligible beneficiaries have access to essential medical services."
+            ]
+          },
+          {
+            "tag": "mjphj_objective",
+            "questions": [
+              "Objective of the Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "Mahatma Jyotiba Phule Jan Arogya Yojana objective",
+              "Mahatma Jyotiba  Yojana objective",
+              "MJPHJ objective",
+              "Purpose of MJPHJ",
+              "Purpose of Mahatma Jyotiba  Yojana"
+            ],
+            "responses": [
+              "The objective of Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) is to provide financial support and access to quality healthcare services for economically disadvantaged families in Maharashtra, thereby reducing the out-of-pocket expenditure on healthcare."
+            ]
+          },
+          {
+            "tag": "mjphj_eligibility",
+            "questions": [
+              "What are the eligibility criteria for MJPHJ?",
+              "What are the eligibility criteria for Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "What are the eligibility criteria for Mahatma Jyotiba Yojana?",
+              "Who can apply for Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "Eligibility for MJPHJ",
+              "Eligibility for  Mahatma Jyotiba Phule Jan Arogya Yojana"
+            ],
+            "responses": [
+              "Eligibility criteria for Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) include:\n\n- Families with an annual income below ₹1.50 lakh.\n- Families registered under the below-poverty-line (BPL) category.\n- Residents of Maharashtra are prioritized."
+            ]
+          },
+          {
+            "tag": "mjphj_benefits",
+            "questions": [
+              "What are the benefits of MJPHJ?",
+              " Mahatma Jyotiba Phule Jan Arogya Yojana benefits",
+              " Mahatma Jyotiba Phule  Yojana benefits",
+              " MJPHJ benefits",
+              "What do I get from MJPHJ?",
+              "What do I get from Mahatma Jyotiba Phule  Yojana benefits?"
+            ],
+            "responses": [
+              "Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) offers coverage for various medical expenses, including hospitalization, surgeries, diagnostic tests, and pre- and post-hospitalization costs, up to a certain limit per family."
+            ]
+          },
+          {
+            "tag": "mjphj_application_process",
+            "questions": [
+              "How to apply for MJPHJ?",
+              "How to apply for Mahatma Jyotiba Phule  Yojana?",
+              "Application process for Mahatma Jyotiba Phule  Yojana",
+              "Application process for MJPHJ",
+              "Application process for Mahatma Jyotiba Phule Jan Arogya Yojana",
+              "How can I apply for Mahatma Jyotiba Phule Jan Arogya Yojana?",
+              "How can I apply for MJPHJ?"
+            ],
+            "responses": [
+              "To apply for Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ):\n\n1. Visit the nearest Jan Arogya office or the official website.\n2. Fill in the application form with necessary details.\n3. Attach required documents including income proof and ID.\n4. Submit the form, and upon verification, you will receive an eligibility certificate."
+            ]
+          },
+          {
+            "tag": "mjphj_required_documents",
+            "questions": [
+              "What documents are required for MJPHJ?",
+              "Required documents for  Mahatma Jyotiba Phule Jan Arogya Yojana",
+              "Required documents for MJPHJ",
+              "Documents needed for MJPHJ application",
+              "Documents needed for Mahatma Jyotiba Phule  Yojana application"
+            ],
+            "responses": [
+              "Documents required for Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) include:\n\n1. Aadhaar card or any valid ID proof.\n2. Income proof (e.g., salary slips, income certificate).\n3. Address proof (e.g., utility bill).\n4. Family composition details."
+            ]
+          },
+          {
+            "tag": "mjphj_important_dates",
+            "questions": [
+              "What are the important dates forMahatma Jyotiba Phule  Yojana?",
+              "What are the important dates for MJPHJ?",
+              "MJPHJ dates",
+              "Mahatma Jyotiba Phule Jan Arogya Yojana dates",
+              "Application dates for MJPHJ",
+              "Application dates for Mahatma Jyotiba Phule Jan Arogya Yojana",
+              "Application dates for Mahatma Jyotiba Phule  Yojana"
+            ],
+            "responses": [
+              "Important dates for Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) are:\n- Application start: Ongoing\n- Policy renewal: Annually\n- Claim submission: Typically within 30 days of hospitalization."
+            ]
+          },
+          {
+            "tag": "mjphj_official_links",
+            "questions": [
+              "Where can I find more information about MJPHJ?",
+              "Official links for MJPHJ",
+              "MJPHJ details",
+              "What website for MJPHJ",
+              "What website forMahatma Jyotiba Phule Jan Arogya Yojana "
+            ],
+            "responses": [
+              "You can find more information about Mahatma Jyotiba Phule Jan Arogya Yojana (MJPHJ) on the official website: [Insert MJPHJ Website Link]."
+            ]
+          },      {
+            "tag": "bharati_scheme_details",
+            "questions": [
+              "What is the Bharati Scheme for Education?",
+              "Details about Bharati Scheme for Education",
+              "Tell me about Bharati Scheme for Education - Professional Education Course",
+              "What is Bharati Scheme for Education?",
+              "Scheme details for Bharati Scheme",
+              "details of bharti"
+            ],
+            "responses": [
+              "The Bharati Scheme for Education (Professional Education Course) is designed to provide financial support to SC and ST students pursuing professional courses. It aims to cover the tuition and other academic-related expenses to ensure that economically disadvantaged students from these communities can access professional education without financial hardship."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_objective",
+            "questions": [
+              "Objective of Bharati Scheme for Education?",
+              "What is the purpose of the Bharati Scheme?",
+              "Why was the Bharati Scheme for Education launched?"
+            ],
+            "responses": [
+              "The objective of the Bharati Scheme for Education is to promote higher education among Scheduled Caste (SC) and Scheduled Tribe (ST) students by offering financial assistance to those pursuing professional education courses. This helps improve their socio-economic status and ensures equal opportunities in the education system."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_eligibility",
+            "questions": [
+              "Who is eligible for Bharati Scheme?",
+              "Eligibility criteria for Bharati Scheme for Education",
+              "Who can apply for Bharati Scheme for Professional Education?",
+              "Who can apply for Bharati Scheme ?"
+            ],
+            "responses": [
+              "Eligibility for the Bharati Scheme for Education (Professional Education Course) includes:\n\n- The applicant must belong to the Scheduled Caste (SC) or Scheduled Tribe (ST) category.\n- The applicant must be pursuing a professional education course from a recognized institution.\n- The applicant�s family income must not exceed ?2,50,000 per annum."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_benefits",
+            "questions": [
+              "What are the benefits of Bharati Scheme?",
+              "What does Bharati Scheme offer?",
+              "Scheme benefits for Bharati Scheme for Education",
+              "Scheme benefits for Bharati Scheme for Education"
+            ],
+            "responses": [
+              "Under the Bharati Scheme for Education, students can receive the following benefits:\n\n- Full or partial tuition fee coverage\n- Reimbursement of examination and library fees\n- Hostel fee assistance\n- Book allowance for purchasing study materials"
+            ]
+          },
+          {
+            "tag": "bharati_scheme_application_process",
+            "questions": [
+              "How to apply for Bharati Scheme for Education?",
+              "Application process for Bharati Scheme",
+              "Steps to apply for Bharati Scheme for Professional Education"
+            ],
+            "responses": [
+              "To apply for the Bharati Scheme for Education, follow these steps:\n\n1. Obtain the application form from the official website or designated authority.\n2. Fill in the required details, such as personal information, course details, and income proof.\n3. Attach necessary documents, such as caste certificate, income certificate, and academic records.\n4. Submit the completed application form either online or at the designated office before the deadline.\n5. Await verification and approval from the authorities."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_required_documents",
+            "questions": [
+              "What documents are needed for Bharati Scheme?",
+              "Documents required for Bharati Scheme",
+              "Documents  for Bharati Scheme",
+              "Which documents are needed for applying Bharati Scheme?"
+            ],
+            "responses": [
+              "The following documents are required to apply for the Bharati Scheme for Education:\n\n- Caste Certificate (SC/ST)\n- Income Certificate (showing family income below ?2,50,000 per annum)\n- Academic records (previous mark sheets)\n- Admission letter or proof of enrolment in a professional education course\n- Bank account details\n- Aadhaar card"
+            ]
+          },
+          {
+            "tag": "bharati_scheme_faqs",
+            "questions": [
+              "FAQs about Bharati Scheme?",
+              "Where can I find FAQs on Bharati Scheme?",
+              "Bharati Scheme frequently asked questions"
+            ],
+            "responses": [
+              "Here are some frequently asked questions about the Bharati Scheme for Education:\n\n1. **What is the Bharati Scheme for Education?**\n   It provides financial support for SC and ST students pursuing professional courses.\n\n2. **Who is eligible to apply?**\n   SC/ST students with a family income below ?2,50,000 per annum and enrolled in a professional course.\n\n3. **What benefits does the scheme offer?**\n   It covers tuition fees, examination fees, and hostel charges.\n\n4. **How can I apply?**\n   Applications can be submitted through the official website or local authorities."
+            ]
+          },
+          {
+            "tag": "bharati_scheme_official_links",
+            "questions": [
+              "Where can I find more information about Bharati Scheme?",
+              "Official website for Bharati Scheme?",
+              "Where to apply for Bharati Scheme?"
+            ],
+            "responses": [
+              "You can find more information about the Bharati Scheme for Education on the official website:https://www.theglobalscholarship.org/scholarship/bharati-scheme-for-education?source=main"
+            ]
+          }
+    ]
+}

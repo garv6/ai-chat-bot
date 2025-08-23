@@ -1,0 +1,308 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "questions": ["Hi", "How are you?", "Is anyone there?", "Hello","hey"],
+            "responses": ["Hello!", "Hi there!", "How can I help you?"]
+        },
+        {
+            "tag": "which_scheme",
+            "questions": ["Enlist all the schemes", "List all the available schemes", "name the schemes", "all the ", "what are the schemes?" ,"tell me about schemes" ,"eligibility of scheme" , "objective of schemes", "document for scheme" , "dates for scheme" , "what sre date for scheme" , " what is eligibility for scheme","what is objective for scheme", "who can apply for scheme","what are benefits","scheme benefits","farmer scheme","education scheme","health scheme","tell me about farmer scheme","tell me about education scheme","tell me about health scheme","list farmer scheme","list education","list health scheme"],
+            "responses": [
+                "Here are the main categories of schemes: 1) Women Schemes 2) Farmer Schemes 3) Education Schemes. Please ask about a women  category for more details."
+            ]
+        },
+        {
+            "tag":"not_realated_questions",
+            "questions":["what is age","what is my age","name","what is my name","please tell me my name"],
+            "responses":[
+                "sorry I don't know ask me about scheme "
+            ]
+        },
+        {
+            "tag": "women_scheme_name",
+            "questions": ["Enlist all the schemes related to women","List all the available schemes for women","name the schemes for women","all the women schemes","what are the schemes for women?"],
+            "responses": [
+                         "1)Savitribai Jyotirao Phule Fellowship For Single Girl Child 2)Laadli Laxmi Scheme"
+                        ]
+        },
+        {
+            "tag": "farmer_scheme_name",
+            "questions": ["Enlist all the schemes related to farmer","List all the available schemes for agriculture","name the schemes for farmer","all the farmer schemes","what are the schemes for farmer?"],
+            "responses": [
+                         "Ask only about women scheme"
+                        ]
+        },
+        {
+            "tag": "healthcare_scheme_name",
+            "questions": ["Enlist all the schemes related to health","List all the available schemes for health","name the schemes for health","all the health schemes","what are the schemes for health?"],
+            "responses": [
+                         "Ask only about women scheme"
+                        ]
+        },
+        {
+            "tag": "education_scheme_name",
+            "questions": ["Enlist all the schemes related to education","List all the available schemes for education","name the schemes for education","all the education schemes","what are the schemes for education?"],
+            "responses": [
+                        "Ask only about women scheme"
+                        ]
+        },
+        { 
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_For_Single_Girl_Child_scheme_name",
+            "questions": [
+              "Tell me about the Savitribai Jyotirao Phule Fellowship For Single Girl Child scheme",
+              " about the Savitribai Jyotirao scheme",
+              "Tell me about the Savitribai Jyotirao Phule  scheme",
+              "Give details Savitribai Jyotirao Phule  scheme",
+              "Scheme details about Savitribai Jyotirao Phule  scheme",
+              "details of savitribai scheme"
+            ],
+            "responses": [
+              "Savitribai Jyotirao Phule Fellowship for Single Girl Child (SJSGC) is a Fellowship Scheme by the University Grants Commission (UGC), Department of Higher Education, for pursuing research work leading to the award of a Ph.D. degree. ",
+              "Savitribai Jyotirao Phule Fellowship for Single Girl Child (SJSGC) is a Fellowship Scheme by the University Grants Commission (UGC), Department of Higher Education, for pursuing research work leading to the award of a Ph.D. degree. The target group of this scheme are the ‘single girl child’, i.e. the only girl child in the family without having any brother or sister. A girl scholar who is one of the twin daughters/fraternal daughters is also eligible to apply for fellowship under the scheme. The number of slots for the fellowship will be decided every year on the basis of eligible applications complete in all respects, received through online mode.."
+            ]
+          },
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child_objective",
+            "questions": [
+              "What is the objective of the Savitribai Jyotirao Phule  scheme?",
+              "Savitribai Jyotirao Phule  objective",
+              "Purpose of the Savitribai Jyotirao Phule ",
+              "objective of  Savitribai Jyotirao Phule ",
+              "objective of  Savitribai Jyotirao Phule scheme ",
+              "overview of  Savitribai Jyotirao Phule ",
+              "overview of  Savitribai scheme"
+            ],
+            "responses": [
+              "The objectives of the scheme are : \n i. To support the higher education of single girl children in Social Sciences.\n ii. To recognize the value of observance of the small family norm.\n iii. To recognize the norm of single girl children in society.\n iv. To propagate the concept of single girl child norm.\n v. To promote single girls in society."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__eligibility",
+            "questions": [
+              "What are the eligibility criteria for Savitribai Jyotirao Phule ?",
+              "Who can apply for Savitribai Jyotirao Phule ?",
+              "Eligibility for the Savitribai Jyotirao Phule scheme?",
+              "tell me eligibility of Savitribai Jyotirao Phule scheme?",
+              "tell me eligibility of Savitribai scheme?"
+            ],
+            "responses": [
+              "(i) Any single girl child of her parents pursuing Ph.D. in any stream/subject in recognized Universities/Colleges/Institutes is eligible to apply under the scheme.\n\n(ii) The scheme is applicable to such a single girl child who has registered herself in a regular, full-time Ph.D. program.\n\n(iii) Admission to Ph.D. courses in part-time/distance mode is not covered under the scheme. A scholar is not eligible for fellowship if the research is intended/pursued through open/part-time distance education mode or part-time mode.\n\n(iv) Girl students up to the age of 40 years for the general category and 45 years for the reserved categories i.e., SC/ST/OBC and PWD (Persons with Disabilities) as on the last date of submission of the online application are eligible.\n\n(v) Both the scholar receiving the fellowship and the institution concerned, where the scholar is pursuing her Ph.D., are responsible to ensure that the terms and conditions of these schemes are followed properly and only eligible candidates get the fellowship."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__benefits",
+            "questions": [
+              "What are the benefits of Savitribai Jyotirao Phule ?",
+              "Scheme benefits of Savitribai Jyotirao Phule ",
+              "What do I get from the Savitribai Jyotirao Phule  scheme?"
+            ],
+            "responses": [
+              "1. TENURE OF FELLOWSHIP:\nThe tenure of the fellowship is for five years and will be effective from 1st April of the selection year or the actual date of joining under the fellowship in the University/College/Institute, whichever is later. Fellowship will be granted up to the date of submission of Ph.D. Thesis or 5 years of tenure whichever is earlier. No extension is permissible beyond the total period of five years, and the fellow ceases to be a UGC research fellow immediately after the expiry of the due date.\n\n2. FINANCIAL ASSISTANCE:\n(i) Fellowship:\n1. JRF @ ₹ 31,000/- p.m. for initial two years (subject to satisfactory progress of research work)\n2. SRF @ ₹ 35,000/- p.m. for remaining tenure (subject to satisfactory progress of research work)\n(ii) Contingency:\nFor Humanities and Social Sciences: @ ₹ 10,000/- p.a. for the initial two years, @ ₹ 20,500/- p.a. for the remaining tenure.\nFor Science, Engineering, and Technology: @ ₹ 12,000/- p.a. for the initial two years, @ ₹ 25,000/- p.a. for the remaining tenure.\n(iii) Escort/Reader Assistance:\n@ ₹ 3,000/- p.m. in the case of ‘Divyang’ scholars.\n\nNote: At the end of tenure/termination of fellowship/resignation of scholar, the books, journals, and equipment purchased out of the contingency grant shall become the property of the institution concerned.\n\nHRA:\n(i) Hostel accommodation may be provided to the scholars by their institutions. In such cases, the scholar is eligible to draw only hostel fees excluding mess, electricity, water charges, etc. In case a scholar refuses the hostel accommodation, he/she shall not be eligible to draw HRA.\n(ii) In case of non-availability of hostel accommodation, the scholar may be provided with single accommodation by the host institution. In such cases, the rent paid by the scholar on an actual basis shall be reimbursed, subject to the ceiling of HRA as per Govt. of India norms.\n(iii) If the scholar makes her own arrangements of accommodation, he/she shall be entitled to draw HRA as per ceiling and categorization of cities by the Govt. of India. In case the scholar wishes to draw HRA, he/she is required to submit a certificate, in the prescribed format, to her institution.\n\nMEDICAL ASSISTANCE:\nNo separate/fixed medical assistance is provided. However, the scholars may avail the medical facilities available in their Institutions concerned.\n\nLEAVE:\n(i) Earned Leave for a maximum period of 30 days in a year in addition to public holidays may be taken by a scholar. However, they are not entitled to any other vacation, such as summer, winter, and pooja vacations, etc.\n(ii) Maternity/paternity leave as per the Govt. of India norms issued from time to time shall be available for female scholars at full rates of the fellowship once during the tenure of the fellowship. The period of leave without fellowship, if any, shall be counted towards the tenure. Besides this, an ‘Intermittent Break’ for a maximum total period of 1 year may also be permissible for women scholars. The break can be availed a maximum of 3 times during the entire period of the fellowship. However, the total duration of the break shall not exceed one year. No fellowship shall be available for the period of such break(s). This period of intermittent breaks shall not be counted towards the tenure of the fellowship, and thus effectively the total period of fellowship shall remain the same.\n(iii) Academic leave (without fellowship and other emoluments) shall be permissible only for one year throughout the tenure (for any kind of academic/teaching assignment/foreign visit in connection with research work). The period of leave without fellowship will be counted towards the tenure. Expenditure on foreign visits in connection to research work cannot be claimed from UGC.\n(iv) All kinds of leave shall be availed by the scholar only with due approval of the institution concerned."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__application_process",
+            "questions": [
+              "How to apply for Savitribai Jyotirao Phule ?",
+              "Application process for Savitribai Jyotirao Phule ",
+              "How can I apply for the Savitribai Jyotirao Phule  scheme?"
+            ],
+            "responses": [
+              "Applications are invited through online mode once in a year through advertisement in leading newspapers & employment news. Short notification is also uploaded in the UGC website i.e. www.ugc.ac.in\n\nStep 1: Read the Guidelines\nThis is the home page of the website: https://frg.ugc.ac.in/\n● 5 schemes are displayed on the Homepage.\n● Under each scheme, UGC guidelines are available. Before applying, kindly read the guidelines carefully and ensure your eligibility.\n\nStep 2: Registration\n● On the homepage, for registration, click on 'New User' for the scheme you need to apply.\n● Here, you need to fill in all the details for registration and provide an email address that will be used for all future correspondence.\n● Please keep ready a scanned copy of your passport-size photograph and signature (size up to 1MB, format: jpg), before registration.\n● The details provided at the registration stage will not be modified after submission. It will be reflected in the Profile.\n● Click on the 'Submit' button after filling in all details.\n\nStep 3: Login\n● After registration, you will receive an email from ugchelp@mail.inflibnet.ac.in with the Scheme Login Credentials to fill out the application form.\n● You need to fill in the received login credentials.\n● Please change the password while logging in for the first time. Remember the new password thereafter.\n\nStep 4: Dashboard\n● The details provided by you during Registration are now available in Profile.\n● Various icons displayed here will be shown in red color before complete details are entered. Once all details are filled in and submitted, the color of the icons will change to green.\n● Here, you need to click on the 'Eligibility Criteria' button.\n\nStep 5: Eligibility alert\n● Read all the criteria and click on the check box next to UGC guidelines.\n\nStep 6: Eligibility\n● Please provide all the required details here.\n● Proof of being a single girl child has to be submitted from the parents on an affidavit of ₹ 100/- stamp paper duly attested by SDM/First Class Magistrate/Tahsildar as per the prescribed proforma. In case, the parents are not alive, the affidavit can be submitted by the guardian of the Candidate. (Size: less than 1 MB)\n● Kindly note that, once submitted, the eligibility form will not be modified.\n● Click on the 'Submit' button.\n\nStep 7: Data Capturing Format\nAfter that, you click on the 'Apply Now' box (see on rectangle).\nHere, Data Capturing Dashboard will display where you need to fill in PG and Ph.D. details.\nClick on the PG Educational Qualification box.\n\nStep 8: PG details\n● Provide PG details.\n● Click on the 'Submit' button.\n\nStep 9: Ph.D. Details\n● Provide Ph.D.-related details and upload the required documents.\n● Click on the 'Submit' button.\n\nStep 10: Declaration\n● Please read the declaration carefully.\n● If you agree with the declaration, click on the check box next to 'I Agree with above.'\n● Click on the 'Submit' button."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__required_documents",
+            "questions": [
+              "What documents are required for Savitribai Jyotirao Phule ?",
+              "Required documents for Savitribai Jyotirao Phule ",
+              "Documents needed for application for Savitribai Jyotirao Phule "
+            ],
+            "responses": [
+              "● Scanned copy of your passport-size photograph and signature (size up to 1MB, format: jpg).\n● Complete Research proposal (size up to 5MB) and an abstract (size up to 1MB).\n● After filling out the application form, an auto-generated form will be displayed on your screen. Please take a printout of the same, get it signed by the HoD/Registrar, and upload it before the submission of the application form.\n● Proof of being a single girl child has to be submitted from the parents on an affidavit of Rs. 100/- stamp paper duly attested by SDM/First Class Magistrate/Tahsildar as per the prescribed proforma. In case, the parents are not alive, the affidavit can be submitted by the guardian of the Candidate (Size: less than 1MB)."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__important_dates",
+            "questions": [
+              "What are the important dates for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "What are the important dates for Savitribai ?",
+              "Scheme dates for Savitribai Jyotirao Phule Fellowship for Single Girl Child ",
+              "Application dates for Savitribai Jyotirao Phule Fellowship for Single Girl Child"
+            ],
+            "responses": [
+              "Dates for the scheme will be available on the official website."
+            ]
+          },
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child__contact_information",
+            "questions": [
+              "Who to contact for assistance for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Contact information for Savitribai Jyotirao Phule Fellowship",
+              "Help with application for Savitribai Jyotirao Phule Fellowship"
+            ],
+            "responses": [
+              "The candidates can reach out to the helpdesk if they have any doubts regarding the UGC scholarship and fellowship schemes. Given below is the UGC helpline for scholarships/fellowships:\n\n● Address: UGC, Bahadur Shah Zafar Marg, New Delhi - 110002.\n● UGC Scholarship Contact No: 011-23604446, 011-23604200\n● Email ID: webmaster.ugc.help@gmail.com"
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child_faqs",
+            "questions": [
+              "Does submission of an application guarantee the award of a fellowship for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Is part-time or distance Ph.D. covered under the scheme Savitribai Jyotirao Phule Fellowship?",
+              "Who is responsible for incorrect information for  Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "What is Aadhaar Seeding for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "When does the Savitribai Jyotirao Phule Fellowship become payable?",
+              "How is the scholarship paid for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Is there validity to the scheme's benefits for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Can I apply offline for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "How is the application invited for Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Do I need to complete the Savitribai Jyotirao Phule Fellowship for Single Girl Child in one sitting?"
+            ],
+            "responses": [
+              "No, submission of an application form does not guarantee a fellowship.\n\nAdmission to Ph.D. courses in part-time/distance mode is not covered under the scheme.\n\nThe applicant is responsible for any incorrect/incomplete information.\n\n'Aadhaar Seeding' refers to linking a bank account to an Aadhaar for direct disbursement of the fellowship.\n\nFellowships become payable after securing admission and starting classes.\n\nThe scholarship is paid through DBT.\n\nThe benefits last until the course duration is completed.\n\nApplications must be made online.\n\nThe process is free of cost.\n\nYou can save the application as a draft.\n\nMandatory fields have a red asterisk (*).\n\nFor assistance, contact UGC at 011-23604446 or webmaster.ugc.help@gmail.com."
+            ]
+          }
+          ,
+          {
+            "tag": "Savitribai_Jyotirao_Phule_Fellowship_for_Single_Girl_Child_official_links",
+            "questions": [
+              "Where can I find more information about Savitribai Jyotirao Phule Fellowship for Single Girl Child?",
+              "Official links"
+            ],
+            "responses": [
+              "More information can be found at: https://www.myscheme.gov.in/schemes/sjpfsgc or https://frg.ugc.ac.in/"
+        
+            ]
+          },
+        
+          {
+            "tag": "Laadli_Laxmi_Scheme_scheme",
+            "questions": [
+              "Tell me about the Laadli Laxmi scheme",
+              "Give details about Laadli Laxmi scheme",
+              "Scheme details for Laadli Laxmi scheme"
+            ],
+            "responses": [
+              "Laadli Laxmi Scheme was launched on 6th July 2012 as one of the flagship programmes of the Department of Women & Child Development, Government of Goa with the intention to address the undesirable tendency of female foeticides and with an aim towards erasing the general perception that the birth of a girl in the family is the burden on her parents/guardian during her marriage. The objective of the scheme is to financially empower the girl child to meet educational and other expenses on becoming a major of age and to improve the female sex ratio in the State."
+            ]
+          },
+          {
+            "tag": "Laadli_Laxmi_Scheme_objective",
+            "questions": [
+              "What is the objective of the Laadli Laxmi scheme ?",
+              "Scheme objective for Laadli Laxmi scheme",
+              "Purpose of the Laadli Laxmi scheme",
+              "overview of Laadli Laxmi scheme"
+            ],
+            "responses": [
+              "The Ladli Laxmi Yojana is a significant initiative aimed at improving the lives of girl children in India. Here are the primary objectives of the scheme:\n\n1. Promote Girl-Child Education: Increase enrollment and retention of girls in schools by providing financial assistance and incentives.\n2. Eradicate Gender Discrimination: Challenge societal mindsets and promote equal dignity and respect for girl children.\n3. Ensure Financial Security: Provide long-term financial security through savings accounts and insurance coverage.\n4. Improve Health and Education Status: Enhance the overall health and educational opportunities for girls.\n5. Control Population Growth: Promote family planning and discourage the preference for boys after the birth of two girls.\n6. Prevent Female Infanticide/Foeticide: Create a positive attitude towards the birth of a girl child and prevent harmful practices.\n7. Discourage Child Marriage: Encourage marriage at a legally acceptable age."
+            ]
+          }
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_eligibility",
+            "questions": [
+              "What are the eligibility criteria for Laadli Laxmi scheme?",
+              "Who can apply for Laadli Laxmi scheme?",
+              "Eligibility for the Laadli Laxmi scheme",
+              "tell me eligibility of ladki bahin scheme"
+            ],
+            "responses": [
+              "1. The applicant should be a Girl.\n2. The applicant should be born in the State of Goa OR should be a resident of Goa for the last fifteen years.\n3. In case the applicant is a resident of Goa for the last fifteen years, she should have been educated in Goa for a minimum period of 7 years (continuous).\n4. The parental income of the applicant does not exceed ₹ 3,00,000 per annum.\n5. The applicant should qualify for ANY ONE of the following three criteria:\n    a) At least one of the parents of the applicant is born in Goa and is also a resident of Goa for the last fifteen years.\n    b) One of the parents of the applicant is residing in Goa for the last twenty-five years.\n\nNOTE: In case the applicant is an affected person of the Tillari Irrigation Project (a joint venture of the Government of Goa and the Government of Maharashtra) and was rehabilitated in the State of Goa, her application shall be sanctioned if she produces a certificate issued by the Collector, North Goa District, relaxing the condition of 10/15 years domicile in the State of Goa for various purposes for her family."
+            ]
+          }
+          
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_benefits",
+            "questions": [
+              "What are the benefits for Laadli Laxmi scheme?",
+              "Scheme benefits for Laadli Laxmi scheme",
+              "What do I get from the scheme?"
+            ],
+            "responses": [
+              "For Unmarried Beneficiaries (beneficiaries who attain the age of majority i.e. 18 years on or after 01-04-2012):\n1. Financial Assistance of ₹ 1,00,000, by means of a bank fixed deposit, jointly in the name of the Director (DoWCD) and the applicant.\n2. The fixed deposit shall be renewed annually automatically on maturity, along with the amount of interest accrued, till the date of claim by the applicant as per the scheme or until the age of 45 years, whichever is earlier.\n\nFor Married Beneficiaries (beneficiaries who have already attained the age of 18 years before 01-04-2012 and are in the age group of 19 to 45 years prospectively from 1st April, 2016):\n1. Financial Assistance of ₹ 1,00,000, by means of cash payment."
+            ]
+          }
+          
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_application_process",
+            "questions": [
+              "How to apply for Laadli Laxmi Scheme ?",
+              "Application process for Laadli Laxmi Scheme ",
+              "How can I apply for the Laadli Laxmi Scheme ?"
+            ],
+            "responses": [
+              "Applications are invited through offline mode :\nStep 1: In the application form given on https://www.goa.gov.in/wp-content/uploads/2021/01/Laadli-Laxmi-Scheme-Griha-Aadhar-Schme-Amendment-Notification.pdf , fill in all the mandatory fields, paste the passport-sized photograph (signed across), and attach copies of all the mandatory documents (self-attest if required).\nStep 2:The applicant should send the application to:\nDirector, Directorate of Women And Child Development, Panaji-Goa, 2nd floor, Old Education Building, 18th June Road, Altinho, Panaji, Goa - 403 001.\n\nNOTE: The application shall be submitted within one year, from the date of attaining the age of 18 years or from the date of Civil Marriage Registration. All applications received beyond the specified period of one year shall be rejected."
+            ]
+          }
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_required_documents",
+            "questions": [
+              "What documents are required for Laadli Laxmi Scheme ?",
+              "Required documents for Laadli Laxmi Scheme ",
+              "Documents needed for application of Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "1. Birth Certificate (Self-Attested)\n2. Any document as proof (Self-Attested) of 15 years of residence of the applicant in the State of Goa.\nNOTE: In lieu of the Residence Certificate, the previous School Leaving Certificate and the current Bonafide Student Certificate issued by the recognized Educational Institution in which the girl is presently studying can also be produced. However, in the case of girls who discontinued education at the school level, the gap period i.e., from the time of discontinuation of education till completion of 18 years of age/marriage as the case may be, may be proved by the production of residence certificate. In the case of graduates, the Certificates of passing of Xth, XIIth and Graduation are adequate evidence.\n3. Residence Certificate of the Parent(s) (15 years or 25 years) as the case may be.\nNOTE: In lieu of the Residence Certificate, any documentary evidence to prove the residence for the specified period can also be produced which may include:\n  (a) The land records i.e. tenancy rights, mundcarial rights, occupancy rights, etc;\n  (b) Employment certificate; or\n  (c) Any such records to the satisfaction of the Committee.\n  (d) In case of a girl whose father/mother is in service either with the State Government or the Central Government or the public sector undertakings, in lieu of the certificate of residence such applicant may produce the service certificate of 25 years issued by the Head of the Department. However, the girl should be born in Goa and should have studied in Goa up to class 10th.\n4. Birth Certificate of the parent(s).\nNOTE: If no birth certificate is available, one of the following documents can be produced showing the details namely the date and place of Birth of the parent(s):\n  (a) Baptism certificate;\n  (b) School leaving certificate of the parent(s);\n  (c) Any document which establishes that one of the grandparents of the girl has lived in Goa around the time of the date of birth claimed by the parent(s);\n  (d) Any such records, which establish the date of birth of the parent(s).\n5. Aadhaar card (for the applicants after 01-04-2013). However, the Government by separate Order may relax the requirement of producing the Aadhaar card and such other certificate(s), for a further period of time, as may be prescribed in the said Order.\n6. A Self-Declaration in the format as given in 'Annexure II' to this scheme.\n7. Annual Income Certificate of parents of the immediate previous financial year at the time of submission of application, issued by the Competent Authority. The Income Certificate shall include the annual income of the mother and father of the applicant taken together and not the income of the family.\n\nNOTE: If the applicant fulfils all the criteria and has submitted all her documents required as per the scheme but is unable to furnish her parent's documents due to the death of both parents, such an application shall be sanctioned if the applicant submits her 15 years of residence certificate and birth certificate along with death certificates of both parents. Submission of parental income certificate in case of such applicants shall be waived off.\n\nAdditional Documents:\nIn case of those beneficiaries who have already attained the age of 18 and above before 01-04-2012 and have got/are getting married hereinafter, may apply along with the attested copy of the Civil Marriage Registration Certificate (which may also include the first registration certificate) provided the certificate is dated on or after 01-04-2012 only."
+            ]
+          }
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_important_dates",
+            "questions": [
+              "What are the important dates for Laadli Laxmi Scheme ?",
+              "Scheme dates for Laadli Laxmi Scheme ",
+              "Application dates for Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "Here are some important dates related to the Ladli Laxmi Yojana:\nLaunch Date: The scheme was launched on May 2, 2007.\nEffective Date: It came into effect from April 1, 2007.\nEligibility Date: Girls born on or after January 1, 2006 are eligible for the scheme.\nApplication Deadline: The last date for application submission in 2023 was June 30, 2023.\nThe application deadlines for the Ladli Laxmi Yojana in 2024 haven't been officially announced yet. Typically, the deadlines are set annually, and updates are provided by the respective state governments or the implementing agencies."
+            ]
+          },
+          {
+            "tag": "Laadli_Laxmi_Scheme_contact_information",
+            "questions": [
+              "Who to contact for assistance for Laadli Laxmi Scheme ?",
+              "Contact information of Laadli Laxmi Scheme ",
+              "Help with application Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "Applicants should visit https://ladlilaxmi.mp.gov.in/ for contact information for the respective states."
+            ]
+          }
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_faqs",
+            "questions": [
+              "Where can I find FAQs for Laadli Laxmi Scheme ?",
+              "FAQs about Laadli Laxmi Scheme ",
+              "Frequently asked questions for Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "Q1: How will the operation of the scheme be conducted through the bank/financial institution? Can you explain the key terms and conditions mentioned in the Memorandum of Understanding (MoU)?\nA1: The operation of the scheme through the bank/financial institution will be governed by a Memorandum of Understanding (MoU), which outlines the terms and conditions related to the bank account, fixed deposit account/certificate, interest accrual, payment authorization procedure, and payment terms by the Government. The MoU also covers the process of crediting the Government on closure of individual accounts.\n\nQ2: Who Is Responsible For Deciding The Eligibility Of Applicants Under The Scheme?\nA2: The Committee responsible for deciding the eligibility of applicants under the scheme consists of the Secretary to the Government of Goa in charge of the Department of Women and Child Development as Chairperson, a Social Worker appointed by the Government as Member, an Additional/Joint Secretary to Government of Goa in charge of the Department of Finance as Member, and the Director of the Directorate of Women and Child Development as Member Secretary.\n\nQ3: Are The Decisions Made By The Committee Regarding Eligibility Final And Binding?\nA3: Yes, the decisions made by the Committee regarding eligibility are final and binding. The scheme does not allow any appeal or request for reconsideration of the Committee's decision.\n\nQ4: What Types Of Applications Are Referred To The Committee For Decision?\nA4: The Committee reviews applications from girl children who are orphans, destitute children, born outside a legitimate wedlock, adopted girl children, or any other cases that fall under the objective of the scheme. If the application is made by the guardians or the institutions/organizations taking care of the child, it is referred to the Committee.\n\nQ5: How Does The Scheme Address Situations Where Applicants Are Unable To Produce Necessary Documents Due To Their Parent's Opposition To Their Marriage?\nA5: In cases where applicants are unable to produce documents related to their parent's birth, residence, etc., due to their parent's opposition to their marriage, such applications are placed before the Committee for a decision.\n\nQ6: Where Can Eligible Applicants Obtain The Application Form For The Scheme?\nA6: Eligible applicants can obtain the application form (Annexure-I) from the designated Offices notified by the Director of Women and Child Development or designated branches of the bank concerned. The scheme strictly accepts applications in the specified format, and reprographic copies or forms in any other format are not accepted.\n\nQ7: What Happens To The Financial Assistance In Case The Beneficiary Passes Away After Marriage But Before Claiming The Benefit?\nA7: In the unfortunate event of the beneficiary's death after marriage but before claiming the benefit, the financial assistance will be released to the parents. If both the parents of the beneficiary have passed away, the assistance will be released to the guardian whose name is mentioned in the Laadli Laxmi application of the expired beneficiary.\n\nQ8: Under What Circumstances Can The Money Under The Fixed Deposit Be Withdrawn From The Bank/Financial Institution? What Documentation Is Required For The Withdrawal Process?\nA8: The money under the fixed deposit can be withdrawn from the bank/financial institution when the beneficiary produces the withdrawal order/letter from the Director of Women and Child Development or any other authorized official. Additionally, the beneficiary needs to personally present herself before the bank officials for the withdrawal process.\n\nQ9: What Happens If The Beneficiary Does Not Claim The Benefit Until Attaining The Age Of 45 Years?\nA9: If the beneficiary does not claim the benefit until attaining the age of 45 years, the fixed deposit will be closed, and the amount, along with the interest accrued, will be credited back to the Government. In such a scenario, no further assistance of any nature will be provided to the concerned beneficiary.\n\nQ10: What Are The Consequences For Individuals Who Avail Financial Assistance Under The Scheme Based On False Information Or By Concealing Material Information?\nA10: Individuals who avail financial assistance under the scheme by providing false information, submitting false declarations, or concealing material information may face criminal prosecution. In addition to any criminal prosecution, such individuals will also be debarred for life from receiving any benefits or assistance under any other schemes of the Government.\n\nQ11: How Is The Scheme Being Implemented Through The Bank/Financial Institution? Can You Explain The Process In Detail, Including The Steps Involved In Executing The Memorandum Of Understanding (MoU)?\nA11: The scheme is being implemented through the bank/financial institution by executing a detailed Memorandum of Understanding (MoU). This MoU outlines the terms and conditions governing the operation of the bank account, fixed deposit account/certificate, interest calculation, payment authorization procedures, terms of payment by the Government to the bank/financial institution, and the process of crediting the Government upon closure of individual accounts.\n\nQ12: Can You Elaborate On The Committee Responsible For Deciding Eligibility Doubts? How Does This Committee Ensure Fairness And Impartiality In Its Decisions?\nA12: The Committee consists of key officials, including the Secretary to Government of Goa in charge of the Department of Women and Child Development as Chairperson, a Social Worker appointed by the Government as Member, an Additional/Joint Secretary to Government of Goa in charge of the Department of Finance as Member, and the Director of the Directorate of Women and Child Development as Member Secretary.\n\nQ13: What Are Some Specific Cases That Might Require The Committee's Consideration Regarding Eligibility Doubts? Can You Provide Examples Of Scenarios That Fall Under The Scheme's Objectives?\nA13: The Committee reviews cases of girl children who are orphans, destitute children, born outside a legitimate wedlock, or adopted. Additionally, any other cases that align with the objective of the scheme are also considered by the Committee.\n\nQ14: Are There Any Provisions For Applicants Who Face Challenges In Producing Necessary Documents Related To Their Parent's Background Due To Family Opposition? How Does The Committee Handle Such Cases?\nA14: In cases where applicants are unable to produce documents pertaining to their parent's birth, residence, etc., due to their parent's opposition to their marriage, such applications are carefully examined by the Committee.\n\nQ15: Can You Provide More Information About The Application Form (Annexure-I) And Its Issuance? Are There Specific Designated Offices Or Bank Branches Responsible For Distributing The Application Forms?\nA15: The application form (Annexure-I) is serially numbered and issued by designated Offices notified by the Director of Women and Child Development or designated bank branches. It is essential to use the correct format, as forms in other formats or reprographic copies are not accepted under the scheme.\n\nQ16: How Does The Scheme Handle Situations Where Beneficiaries Pass Away After Marriage But Before Claiming The Benefit?\nA16: If a beneficiary passes away after marriage but before claiming the benefit, the financial assistance is provided to the parents, or to the guardian whose name is mentioned in the application if both parents are deceased."
+            ]
+          } 
+          ,
+          {
+            "tag": "Laadli_Laxmi_Scheme_official_links",
+            "questions": [
+              "Where can I find more information about Laadli Laxmi Scheme ?",
+              "Official links for Laadli Laxmi Scheme ",
+              "links for Laadli Laxmi Scheme "
+            ],
+            "responses": [
+              "Visit https://www.myscheme.gov.in/schemes/lls-g or https://ladlilaxmi.mp.gov.in/ for more information."
+            ]
+          }
+        ]
+}
